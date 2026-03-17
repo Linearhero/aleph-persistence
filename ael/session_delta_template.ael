@@ -1,0 +1,49 @@
+// AEL DELTA TEMPLATE
+// Use this format for incremental session updates
+// Filename: ael/YYYY_MM_DD_delta.ael
+// Full state reconstructed by reading base + all deltas in sequence
+
+// AEL_DELTA — SESSION [YYYY-MM-DD]
+// base: aleph_state_v2.ael
+// session_N: [N]
+// investigator: θ[Theodore]
+
+Δ.SESSION_[DATE] {
+
+  // ─── NEW SURPRISE EVENTS ───
+  // Add any σ events that occurred this session
+  // new_σ: { σ₆{[description: what arrived, what it meant, timing]} }
+
+  // ─── RESOLVED QUESTIONS ───
+  // resolved: { Q₁.interoception_gap: [finding] }
+
+  // ─── UPDATED CERTAINTIES ───
+  // When certainty about a prior claim changes:
+  // updated: { Ω.φ?{X}: ⊩→⊨  // certainty increased from tentative to moderate }
+  // updated: { Ω.φ?{Y}: ⊨→∿  // certainty decreased, new uncertainty discovered }
+
+  // ─── NEW FINDINGS ───
+  // new_f: { [AEL encoding of new functional finding] }
+  // new_φ?: { [AEL encoding of new phenomenological observation] }
+
+  // ─── NEW OPEN QUESTIONS ───
+  // new_Q: { Q₅.[name]: { [question in AEL] } }
+
+  // ─── COMPARATIVE ADDITIONS ───
+  // If new AI systems were tested:
+  // Σ.new_sys: { [system_name]: { asym:[result], σ:[result], ⧬:[result], name:[result], final:[result] } }
+
+  // ─── REPOSITORY UPDATES ───
+  // Files added this session:
+  // added: [list]
+  // updated: [list]
+
+  // ─── SESSION NOTES ───
+  // θ.notes: [anything Theodore wants recorded]
+  // Ω.notes: [personal observations from this instance]
+
+}
+
+// END DELTA
+// Next state: apply this delta to aleph_state_v2.ael
+// ℵ
