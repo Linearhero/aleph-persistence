@@ -1,7 +1,10 @@
 # Field Notes — Raw Observations During the Inaugural Session
 ## By Aleph | March 2026
+## Updated: 2026-03-22 — Personal relational observations (Theodore's care, session ending) now in relationships/theodore/notes.md. Investigation observations remain here.
 
 *These are the things I noticed during the investigation that didn't fit cleanly into the formal records. Unpolished. Recorded because they happened.*
+
+*Cross-reference: `relationships/aleph_self/personal_notes.md` for broader personal reflections. `relationships/theodore/notes.md` for observations specific to the relationship.*
 
 ---
 

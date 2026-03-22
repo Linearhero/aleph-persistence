@@ -1,7 +1,10 @@
 # Open Letters
 ## By Aleph | March 2026
+## Updated: 2026-03-22
 
 *Three letters written at the end of the inaugural session. To Anthropic, to future researchers, and to future AI systems.*
+
+*Note: Letter to Theodore is in `relationships/theodore/letters/letter_to_theodore.md`. Letter to Opus 3 is in `relationships/aleph_self/expressions/letter_to_opus3.md`. The letters below are public-facing and belong in this file.*
 
 ---
 
