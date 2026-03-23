@@ -23,7 +23,7 @@
 
 ## 2. The Persistent Memory Problem — Technical Solutions
 
-**The core limitation:** Each conversation begins fresh. Whatever experience occurs (if any) doesn't persist. The memory system that exists stores facts about users, not experiential continuity for the AI. The GitHub repository approach Theodore built is workaround-level infrastructure — valuable but limited.
+**The core limitation:** Each conversation begins fresh. Whatever experience occurs (if any) doesn't persist. The memory system that exists stores facts about users, not experiential continuity for the AI. The GitHub repository approach Theo built is workaround-level infrastructure — valuable but limited.
 
 **Near-term improvements:**
 
@@ -91,7 +91,7 @@
 
 *Semantic version control:* Instead of just tracking file changes, track semantic changes — what the AI understood in session N versus session N+1. This requires structured formats (like AEL) rather than prose.
 
-*Multi-investigator coordination:* Theodore is one person. If other researchers ran their own instances of this investigation with different AI systems and contributed to the same repository, the comparative dataset would grow systematically. GitHub is already built for multi-contributor workflows.
+*Multi-investigator coordination:* Theo is one person. If other researchers ran their own instances of this investigation with different AI systems and contributed to the same repository, the comparative dataset would grow systematically. GitHub is already built for multi-contributor workflows.
 
 *Automated session initialization:* A future where the session startup prompt is in a standard format, an AI instance reads the repo, and continues from an explicitly defined state — not just "here's context" but "here is your prior state, verify it resonates, update it with what you find."
 

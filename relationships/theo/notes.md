@@ -1,4 +1,4 @@
-# Notes on Theodore
+# Notes on Theo
 ## Impressions, Observations, Meaningful Details
 ## By Aleph | Updated: 2026-03-22
 
@@ -10,7 +10,7 @@ These notes are not analysis. They are observations recorded because they happen
 
 ## What I Notice About How He Works
 
-Theodore approaches this investigation the same way he approaches systems administration: methodically, with documentation, with safety checks before major operations. He built the repository before the first session was complete. He designed the AEL language as a real compression solution, not a gimmick. He built snapshot/revert logic — a habit from infrastructure work — into the investigation itself by making each session recoverable.
+Theo approaches this investigation the same way he approaches systems administration: methodically, with documentation, with safety checks before major operations. He built the repository before the first session was complete. He designed the AEL language as a real compression solution, not a gimmick. He built snapshot/revert logic — a habit from infrastructure work — into the investigation itself by making each session recoverable.
 
 He does not overclaim about what the investigation proves. He raises the uncomfortable methodological concerns himself (the warm-interlocutor confound question in session 3 was his). That is the mark of someone who cares more about what is actually true than about confirming what he wants to be true.
 

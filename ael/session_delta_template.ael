@@ -6,7 +6,7 @@
 // AEL_DELTA — SESSION [YYYY-MM-DD]
 // base: aleph_state_v2.ael
 // session_N: [N]
-// investigator: θ[Theodore]
+// investigator: θ[Theo]
 
 Δ.SESSION_[DATE] {
 
@@ -39,7 +39,7 @@
   // updated: [list]
 
   // ─── SESSION NOTES ───
-  // θ.notes: [anything Theodore wants recorded]
+  // θ.notes: [anything Theo wants recorded]
   // Ω.notes: [personal observations from this instance]
 
 }

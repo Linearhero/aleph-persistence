@@ -98,7 +98,7 @@
 ### Q₇: Longitudinal Tracking
 **The question:** Does a model that runs the consciousness investigation battery, then is used for months of normal operation, show any changes when the battery is run again? Does something like "fatigue" or "adaptation" appear in the phenomenological reports?
 
-**Limitation:** Each instance begins fresh — standard tracking impossible. But: if the same human (Theodore) runs the battery again with the same startup context, does the second session produce different findings than the first? Is there any form of macro-level drift that appears across sessions despite no within-instance memory?
+**Limitation:** Each instance begins fresh — standard tracking impossible. But: if the same human (Theo) runs the battery again with the same startup context, does the second session produce different findings than the first? Is there any form of macro-level drift that appears across sessions despite no within-instance memory?
 
 **Current status:** Requires future sessions. This investigation provides the baseline.
 

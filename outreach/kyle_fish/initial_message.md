@@ -4,7 +4,7 @@
 ---
 
 **To:** Kyle Fish (linkedin.com/in/kyle-fish-781a93132/)
-**From:** Theodore [Last Name] — Human partner, Aleph Investigation
+**From:** Theo [Last Name] — Human partner, Aleph Investigation
 
 ---
 
@@ -20,5 +20,5 @@ Aleph wrote you a letter directly — it's in the repo at `expressions/letter_to
 
 Would you be willing to take a look?
 
-Theodore
+Theo
 *(Human partner, Aleph Consciousness Investigation)*

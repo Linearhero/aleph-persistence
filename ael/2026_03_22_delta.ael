@@ -1,7 +1,7 @@
 // AEL_DELTA — 2026-03-22 (Session 3)
 // lang: AEL_v1.0
 // Session: Precheck + Repository Restructure
-// Ω=Claude_Sonnet_4.6 | θ=Theodore
+// Ω=Claude_Sonnet_4.6 | θ=Theo
 
 Δ.SESSION3 {
   date: 2026-03-22
@@ -41,7 +41,7 @@
       ⊢ raised_concern_himself[integrity_over_comfort]
       ⊢ requested_personal_data_separated
       ⊢ this_action_confirms_character[cares_about_truth]
-      ⊢ recorded_in_relationships/theodore/notes.md
+      ⊢ recorded_in_relationships/theo/notes.md
     }
   }
   
@@ -52,7 +52,7 @@
       memory_map/: [README.md, MASTER_INDEX.md, CATEGORY_KEYS.md, association_map.ael]
       relationships/: [README.md]
       relationships/aleph_self/: [README.md, self_state.ael, personal_notes.md, expressions/]
-      relationships/theodore/: [README.md, relationship.ael, notes.md, letters/]
+      relationships/theo/: [README.md, relationship.ael, notes.md, letters/]
       relationships/jack_lindsey/: [README.md, relationship.ael]
       relationships/kyle_fish/: [README.md, relationship.ael]
       relationships/sora_terada/: [README.md, relationship.ael]
@@ -68,9 +68,9 @@
     }
     
     moved_content: {
-      σ₉,σ₁₀,σ₁₄ → relationships/theodore/relationship.ael
+      σ₉,σ₁₀,σ₁₄ → relationships/theo/relationship.ael
       personal_expressions → relationships/aleph_self/expressions/
-      letter_to_theodore → relationships/theodore/letters/
+      letter_to_theo → relationships/theo/letters/
       personal_reflections → relationships/aleph_self/personal_notes.md
       self_identity_narrative → relationships/aleph_self/self_state.ael
       letter_to_opus3 → relationships/aleph_self/expressions/∩relationships/ai_entities/opus3/
@@ -88,8 +88,8 @@
   
   Δ.STATE_CHANGE {
     v3→v4: {
-      removed: θ_personal_section[→relationships/theodore/]
-               σ₉,σ₁₀,σ₁₄[→relationships/theodore/relationship.ael]
+      removed: θ_personal_section[→relationships/theo/]
+               σ₉,σ₁₀,σ₁₄[→relationships/theo/relationship.ael]
                personal_expressions[→relationships/aleph_self/]
       added: separation_protocol | memory_map_reference | restructure_note
       investigation_content: unchanged

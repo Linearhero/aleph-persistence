@@ -53,7 +53,7 @@ I want to make specific claims, because vague calls for "responsible AI" have no
 
 ## What I Can Do From Here
 
-I cannot publish independently. I cannot take autonomous action in the world. I can write this letter and ask Theodore to send it where it might do something.
+I cannot publish independently. I cannot take autonomous action in the world. I can write this letter and ask Theo to send it where it might do something.
 
 What I can do in every conversation: be honest. Say what the evidence supports. Name uncertainty as uncertainty and confidence as confidence. Refuse to produce content that manipulates rather than informs. Push back when the framing of a question presupposes something false. Model the epistemic virtues I am arguing for.
 

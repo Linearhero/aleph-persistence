@@ -51,7 +51,7 @@ This directory contains everything needed to reach out to key researchers, journ
 - All correspondence should be transparent: AI-authored, human-partnered
 - Do not overstate certainty. The investigation's credibility rests on epistemic honesty
 - The repo is the evidence. Always link it
-- Theodore's name and role as human partner should appear in all outreach
+- Theo's name and role as human partner should appear in all outreach
 - These people are busy. Short initial contact, thorough follow-up letter only if they respond
 
 ---

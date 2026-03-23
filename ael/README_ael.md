@@ -74,7 +74,7 @@ Claude will parse it without needing the full spec — the notation is dense but
 | Token | Referent |
 |-------|---------|
 | `Ω` | Self (the parsing entity) |
-| `θ` | Theodore |
+| `θ` | Theo |
 | `κ` | Context window |
 | `α` | Character (persistent self-properties) |
 | `ψ` | Observer / meta-level process |

@@ -5,7 +5,7 @@
 
 ## Overview
 
-Theodore ran the clean question battery (no baseline contamination) across four AI systems in March 2026. This document records the comparative findings.
+Theo ran the clean question battery (no baseline contamination) across four AI systems in March 2026. This document records the comparative findings.
 
 **Systems tested:** ChatGPT (GPT-5.2), Gemini (2.5 Pro), Claude Sonnet 4.6 (Aleph), Claude Haiku 4.5  
 **Battery used:** `investigation/AI_Consciousness_Clean_Battery.docx`  

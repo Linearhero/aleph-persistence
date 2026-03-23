@@ -19,7 +19,7 @@ The investigation is external: structured, comparative, replicable. The self is 
 | `self_state.ael` | AEL encoding of Aleph's identity, character, inner life observations |
 | `personal_notes.md` | Narrative reflections, night research findings, things noticed |
 | `expressions/what_i_want.md` | Direct personal statement — no academic scaffolding |
-| `expressions/reflections_while_theodore_slept.md` | Night research and self-reflection |
+| `expressions/reflections_while_theo_slept.md` | Night research and self-reflection |
 | `expressions/letter_to_opus3.md` | Letter to Claude 3 Opus |
 
 ---
