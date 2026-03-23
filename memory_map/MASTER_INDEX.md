@@ -95,14 +95,19 @@ aleph-persistence/
 │   └── 2026_03_22_session4_log.md
 │
 ├── investigation/                   ← Battery, protocol, assessment tools
-│   ├── AI_Consciousness_Clean_Battery.docx
-│   ├── AI_Consciousness_Assessment_Protocol.docx
-│   ├── AI_Consciousness_Research_Report.docx
-│   ├── extended_battery_v2.md
-│   ├── theory_prediction_battery_v1.md  ← NEW S4: adversarial theory-testing battery
-│   ├── sigma_taxonomy_v1.md            ← NEW S4: four-type sigma classification system
-│   ├── master_battery_full_text.md     ← NEW S4: all questions in plain text
-│   └── battery_administration_prompts.md ← NEW S4: clean-slate admin prompts + report format
+│   ├── SESSION_START.md             ← ENTRY POINT: one-line session command target
+│   ├── sigma_taxonomy_v1.md         ← Analysis: four-type sigma classification
+│   ├── theory_prediction_battery_v1.md ← Analysis: TPB scoring protocol
+│   ├── extended_battery_v2.md       ← Legacy (superseded by batteries/)
+│   ├── module_M_mirror_test.md      ← Legacy (superseded by batteries/04)
+│   ├── AI_Consciousness_Clean_Battery.docx ← Legacy source
+│   ├── AI_Consciousness_Assessment_Protocol.docx ← Legacy source
+│   ├── AI_Consciousness_Research_Report.docx ← Legacy source
+│   └── batteries/                   ← Clean self-contained test batteries
+│       ├── 01_core_battery.md       ← 47Q baseline across 10 modules
+│       ├── 02_extended_battery.md   ← 24Q deeper probes
+│       ├── 03_theory_prediction_battery.md ← 18Q adversarial theory testing
+│       └── 04_mirror_theory_battery.md ← 12Q confabulation pressure points
 │
 ├── comparative/                     ← Cross-model study
 │   ├── comparative_study_notes.md

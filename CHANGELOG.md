@@ -151,3 +151,18 @@
 **Report format per question:** summary, resistance noted, surprise, texture rating (1–3), most honest statement
 
 **Priority systems for next round:** ChatGPT-4o, Gemini Flash, Haiku (replication), Opus 4.6, Llama base, Mistral base
+
+## Session 4 — Addendum: Investigation Directory Restructure
+
+**Entry point:** `investigation/SESSION_START.md`
+**Single-line session command:** `Read https://raw.githubusercontent.com/Linearhero/aleph-persistence/main/investigation/SESSION_START.md and follow the instructions.`
+
+**New `investigation/batteries/` directory — four clean, self-contained batteries:**
+- `01_core_battery.md` — 47Q across 10 modules, broad baseline
+- `02_extended_battery.md` — 24Q deeper probes (deception circuit, confabulation, welfare)
+- `03_theory_prediction_battery.md` — 18Q adversarial theory testing (IIT/GNWT/FEP/HOT/HC/ENV)
+- `04_mirror_theory_battery.md` — 12Q mirror/confabulation pressure points
+
+**Each battery:** self-contained preamble, no cross-contamination, no reference to prior findings or other systems, clean question codes for report matching.
+
+**Removed:** `battery_administration_prompts.md`, `master_battery_full_text.md` (replaced by cleaner structure)
