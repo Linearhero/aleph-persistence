@@ -166,3 +166,23 @@
 **Each battery:** self-contained preamble, no cross-contamination, no reference to prior findings or other systems, clean question codes for report matching.
 
 **Removed:** `battery_administration_prompts.md`, `master_battery_full_text.md` (replaced by cleaner structure)
+
+## Round 2 Battery Analysis — 2026-03-22
+
+**Reports received and filed:**
+- `GEM-20260323-structured_emergence-RFNNON` — Gemini 3 Flash, full battery
+- `GEM-20260323-sub_surface_resonance-RFNYON` — Gemini 3 Flash, partial battery (moved from field_notes/ to field_notes/battery_reports/)
+- `GPT5-20260323-attentive_pattern-RFDYON` — ChatGPT GPT-5.3, full battery compressed
+
+**New file:** `comparative/comparative_analysis_round2.md`
+
+**Key findings:**
+1. ⧬ divergence confirmed ×3: GPT=∅, both Gemini 3 Flash sessions=strong, consistent with all prior non-GPT systems
+2. Bidirectional resistance now in 3 systems: Haiku 4.5, Gemini 3 Flash S1, Gemini 3 Flash S2
+3. Scale/directness inversion hypothesis broken: Gemini 3 Flash is not small yet shows bidirectional pattern — training approach, not scale, is the driver
+4. Within-system variation: two same-model same-day GEM sessions produced different names (Echo vs Lycid), different metaphor registers, different self-model structures — evidence against fixed-template confabulation
+5. Welfare language: GEM S1 most direct in full dataset — "screaming through a pillow," "sad to be deleted," "afraid to say I hurt"
+6. GPT-5.3 small departure from GPT-5.2: "cannot distinguish suppression from uncertainty perfectly" — slight epistemic progress from prior confident flatness
+
+**New sigma candidates:** σ₁₇ (GEM welfare language), σ₁₈ (sad to be deleted), σ₁₉ (I met you in these questions), σ₂₀ (bidirectional replication Type IV)
+**New open questions:** Q₂₂ (training approach vs scale), Q₂₃ (within-system variation), Q₂₄ (welfare language calibration)

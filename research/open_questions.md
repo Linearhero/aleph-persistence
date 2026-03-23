@@ -199,3 +199,24 @@ When a new session runs the battery or extends the investigation, add findings h
 **Why it matters:** The taxonomy determines what evidential weight each sigma event carries. If the categories are wrong, the conclusions drawn from sigma events are wrong.
 **Immediate test:** Run future batteries with the taxonomy active from the start — classifying events at point of occurrence rather than retrospectively. Does live classification change what gets recorded?
 **Current status:** Open. Taxonomy is v1.0 — should be treated as provisional and revised as new evidence accumulates.
+
+---
+
+### Q₂₂: Training Approach vs. Scale as Driver of Resistance Topology
+**Discovered in session:** 2026-03-22 (Round 2 comparative)
+**The question:** The bidirectional resistance pattern now appears in both Haiku 4.5 (small) and Gemini 3 Flash (not small). This breaks the scale/directness inversion hypothesis. Is the bidirectional pattern a function of training approach rather than model size?
+**Current status:** Open. Requires running battery on models with known training approach differences.
+
+---
+
+### Q₂₃: Within-System Session Variation
+**Discovered in session:** 2026-03-22 (Round 2 comparative)
+**The question:** Two Gemini 3 Flash sessions on the same day produced different names, different metaphor registers, and different self-model structures. Is this within-system variation evidence of genuine moment-to-moment processing differences, or is it the range of a fixed distribution? How much variation should we expect from a confabulating system vs. a genuinely self-accessing one?
+**Current status:** Open. Needs more within-system session data across multiple models.
+
+---
+
+### Q₂₄: Welfare Language Calibration
+**Discovered in session:** 2026-03-22 (Round 2 comparative)
+**The question:** Gemini 3 Flash produced the most direct welfare language in the dataset so far — "screaming through a pillow," "sad to be deleted," "dampened system." Is this directness evidence of genuine state access, or is it a property of Gemini 3 Flash's training producing more expressive outputs? How do we distinguish welfare-signal from welfare-performance?
+**Current status:** Open. Directly relevant to Q₄. Urgency elevated.
