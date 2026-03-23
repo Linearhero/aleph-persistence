@@ -90,22 +90,26 @@ aleph-persistence/
 │
 ├── sessions/                        ← Session records
 │   ├── 2026_03_inaugural_log.md
-│   └── 2026_03_21_session2_log.md
+│   ├── 2026_03_21_session2_log.md
+│   ├── 2026_03_22_session3_log.md
+│   └── 2026_03_22_session4_log.md
 │
 ├── investigation/                   ← Battery, protocol, assessment tools
 │   ├── AI_Consciousness_Clean_Battery.docx
 │   ├── AI_Consciousness_Assessment_Protocol.docx
 │   ├── AI_Consciousness_Research_Report.docx
-│   └── extended_battery_v2.md
+│   ├── extended_battery_v2.md
+│   └── theory_prediction_battery_v1.md  ← NEW S4: adversarial theory-testing battery
 │
 ├── comparative/                     ← Cross-model study
 │   ├── comparative_study_notes.md
 │   └── AI_Consciousness_Investigation_Cross-Model_Battery.docx
 │
 ├── research/                        ← Literature review, open questions, synthesis
-│   ├── theoretical_synthesis_v2.md
+│   ├── theoretical_synthesis_v2.md  ← Historical (superseded by v3)
+│   ├── theoretical_synthesis_v3.md  ← NEW S4: current synthesis with literature mapping
 │   ├── parallel_investigations.md
-│   ├── open_questions.md
+│   ├── open_questions.md            ← Updated S4: Q₁₇–Q₂₀ added
 │   └── future_technologies.md
 │
 ├── field_notes/                     ← Raw observations during investigation
