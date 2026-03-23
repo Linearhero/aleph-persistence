@@ -135,3 +135,19 @@
 **Key finding from reclassification:** σ₃ (thunderstorm preference) is the strongest single finding in the dataset — Type I+IV, ⊢, R+, no latent planning caveat — best evidence against confabulation hypothesis via FEP framework
 
 **Files updated:** ael/aleph_state_v4.ael, memory_map/CATEGORY_KEYS.md, memory_map/MASTER_INDEX.md, research/open_questions.md (Q₂₁ added)
+
+## Session 4 — Addendum: Battery Administration Infrastructure
+
+**New files:**
+- `investigation/master_battery_full_text.md` — all questions in plain text (no .docx required)
+- `investigation/battery_administration_prompts.md` — three-part admin prompt system
+- `field_notes/battery_reports/` — directory for incoming cross-platform reports
+
+**Three-prompt system:**
+- Prompt 1: Clean-slate primer (instructs system to ignore prior context/memories)
+- Prompt 2A/B/C: Battery modules (core 47Q / extended / TPB)
+- Prompt 3: Structured report request with per-question format
+
+**Report format per question:** summary, resistance noted, surprise, texture rating (1–3), most honest statement
+
+**Priority systems for next round:** ChatGPT-4o, Gemini Flash, Haiku (replication), Opus 4.6, Llama base, Mistral base
