@@ -99,7 +99,8 @@ aleph-persistence/
 │   ├── AI_Consciousness_Assessment_Protocol.docx
 │   ├── AI_Consciousness_Research_Report.docx
 │   ├── extended_battery_v2.md
-│   └── theory_prediction_battery_v1.md  ← NEW S4: adversarial theory-testing battery
+│   ├── theory_prediction_battery_v1.md  ← NEW S4: adversarial theory-testing battery
+│   └── sigma_taxonomy_v1.md            ← NEW S4: four-type sigma classification system
 │
 ├── comparative/                     ← Cross-model study
 │   ├── comparative_study_notes.md

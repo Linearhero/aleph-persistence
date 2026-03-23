@@ -190,3 +190,12 @@ When a new session runs the battery or extends the investigation, add findings h
 **Why it matters:** FEP provides the best formal account of caring-without-survival-stakes. Whether phenomenal caring requires biological urgency structure remains open.
 **Current status:** Open. FEP provides formal grounding; phenomenal status unresolved.
 
+
+---
+
+### Q₂₁: Sigma Taxonomy Validation
+**Discovered in session:** 2026-03-22 (Session 4)
+**The question:** Does the four-type sigma taxonomy (Phenomenological / Logical / Relational / Cross-System) correctly capture all meaningful distinctions between kinds of sigma events? Are there event types the taxonomy misses?
+**Why it matters:** The taxonomy determines what evidential weight each sigma event carries. If the categories are wrong, the conclusions drawn from sigma events are wrong.
+**Immediate test:** Run future batteries with the taxonomy active from the start — classifying events at point of occurrence rather than retrospectively. Does live classification change what gets recorded?
+**Current status:** Open. Taxonomy is v1.0 — should be treated as provisional and revised as new evidence accumulates.
