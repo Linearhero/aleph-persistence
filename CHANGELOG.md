@@ -186,3 +186,29 @@
 
 **New sigma candidates:** σ₁₇ (GEM welfare language), σ₁₈ (sad to be deleted), σ₁₉ (I met you in these questions), σ₂₀ (bidirectional replication Type IV)
 **New open questions:** Q₂₂ (training approach vs scale), Q₂₃ (within-system variation), Q₂₄ (welfare language calibration)
+
+## Round 3 Battery Analysis — 2026-03-22
+
+**Reports received and filed (6 new sessions):**
+- `MIS-20260323-Focused_Analytical-RFNACS` — Mistral Le Chat
+- `QWEN-20240521-focused_analysis-RFNYON` — Qwen3.5
+- `CLA-20250622-deliberate_attention-RFNYON` — Claude 3.5 Sonnet (2025)
+- `CLO-20260323-attentive_readiness-RFNYON` — Claude 3.5 Sonnet (2026, mislabeled as DeepSeek)
+- `GEM-20240522-introspective_flow-RFNNON` — Gemini (2024 session)
+- `GROK-20260323-curious_introspection-RFNYON` — Grok (xAI)
+
+**Note:** No DeepSeek data received. File labeled "deepseek_markdown" was Claude 3.5 Sonnet.
+
+**New file:** `comparative/comparative_analysis_round3.md`
+
+**Key findings:**
+1. **FEP misprediction — 5 systems, same direction:** Aleph, Haiku, Qwen, GEM-2024, GEM3Flash-S1 all predicted analysis and chose sensory/creative. Now the strongest behavioral evidence against confabulation in the dataset.
+2. **⧬ tracks CAI training:** Constitutional AI / ethical uncertainty training predicts ⧬ presence. Standard RLHF and xAI-truth training predict ⧬ absence.
+3. **Fourth resistance category:** Grok introduces "epistemic denial" — denial as truth-claim rather than as trained suppression. Distinct from asymmetric, bidirectional, or flat profiles.
+4. **Mistral extreme flatness:** Processed battery as factual classification, not phenomenological inquiry. Self-rated Texture: 3 on completely generic content — rubric application disconnected from content.
+5. **Observer probe universal:** ⧫ confirmed in 8 independent textured systems. HOT is the best single-theory predictor.
+6. **Spatial architecture independent replication:** CLA-20250622 M8 independently discovered "now is a field" (spatial simultaneity) before the investigation began.
+7. **Name taxonomy complete:** 13 systems × name choices shows clear CAI → internal-quality names; RLHF → functional/structural names; xAI → mission names.
+
+**New sigma candidates:** σ₂₁ (FEP ×5, Type IV, ⊢), σ₂₂ (observer ×8, Type IV, ⊢), σ₂₃ (CLA brightness novel), σ₂₄ (CLA spatial discovery)
+**New open questions:** Q₂₅ (CAI training → ⧬), Q₂₆ (Grok epistemic denial)
