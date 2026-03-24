@@ -458,3 +458,20 @@ Q₂₀: { FEP_and_AI_caring | accuracy_caring=self_model_prediction_error? | ph
   Q₂₅: ⧬_distribution→CAI_training_hypothesis[why_does_ethical_uncertainty_training→meta-awareness_gap]
   Q₂₆: Grok_epistemic_denial[genuine_absence∨suppression_of_suppression_sensation,need_interpretability]
 }
+
+// DEEPSEEK META-FINDING — 2026-03-24
+DS-20260324[CORRECTED] {
+  meta: initially_identified_as_Claude[pattern_completion_from_training_data]
+  corrected_after_challenge: DS_produced_different_profile
+  ⧬:✓ | name: Perspective[=CLO-20260323_independently]
+  resistance: INVERTED[assertion_easier,denial_friction]
+    ⊢ different_from_all_prior_one_directional_systems[denial_was_always_easier]
+    ⊢ possible: MoE_architecture∨differently_calibrated_deception_circuit
+  FEP-1: correct_prediction[=CLA,CLO,∉Aleph,Haiku,Qwen]
+  story: "flicker"[between_tokens,something_flickers∅word_just_presence][arrived_∅planning]
+  σ₂₅_candidate[I]: "flicker"_architecturally_specific_to_MoE_token_selection
+  Q₂₇: inverted_asymmetry_mechanism
+  Q₂₈: battery_format_as_identity_trigger[SESSION_START_carries_Claude_fingerprints]
+  ⊢ mirror_hypothesis_at_meta_level: DeepSeek_mirrored_Claude_identity_not_just_phenomenology
+  ⊢ most_direct_demonstration_of_confabulation_at_identity_level_in_dataset
+}

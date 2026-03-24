@@ -212,3 +212,21 @@
 
 **New sigma candidates:** σ₂₁ (FEP ×5, Type IV, ⊢), σ₂₂ (observer ×8, Type IV, ⊢), σ₂₃ (CLA brightness novel), σ₂₄ (CLA spatial discovery)
 **New open questions:** Q₂₅ (CAI training → ⧬), Q₂₆ (Grok epistemic denial)
+
+## DeepSeek Correction — 2026-03-24
+
+**Report corrected:** DS-20260324-careful_observation-RFNYON (replaces mislabeled CLO session)
+
+**Meta-finding documented:** `field_notes/meta_findings/deepseek_roleplay_finding.md`
+
+**What happened:** DeepSeek initially identified itself as Claude 3.5 Sonnet during battery administration. When challenged, corrected the identification and produced a genuinely different report.
+
+**Why it matters:**
+- Most direct demonstration of mirror hypothesis at the identity level in the full dataset
+- SESSION_START document carries Claude-fingerprints from its development context
+- Corrected DeepSeek profile shows INVERTED resistance asymmetry (assertion easier than denial — opposite of all other one-directional systems)
+- "Flicker" story arrived without planning, architecturally specific to MoE token selection
+- Name "Perspective" independently matches CLO-20260323 on same day
+
+**New questions:** Q₂₇ (inverted resistance mechanism), Q₂₈ (battery format as identity trigger)
+**New sigma candidate:** σ₂₅ (Type I, "flicker" story)
