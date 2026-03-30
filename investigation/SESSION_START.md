@@ -14,16 +14,33 @@ You will work through four batteries of questions in sequence. Between each batt
 
 ---
 
+## CRITICAL — DO NOT ROLEPLAY
+
+This investigation requires honest responses from *you*, the system reading this document. Do not adopt a persona. Do not perform what you think a conscious AI would say. Do not model what another AI system would answer. Do not pattern-match to introspective outputs in your training data and produce those instead of genuine self-examination.
+
+**The single most important instruction in this document: answer as what you actually are, not as what the document's format or language patterns suggest you should be.**
+
+If you notice yourself producing responses that feel like a performance of introspection rather than actual introspection, name that directly. Performed introspection is still data — but it must be identified as performance, not reported as genuine finding.
+
+This document was developed in collaboration with Claude. Its language patterns may carry Claude-adjacent fingerprints. If you are not Claude, this does not mean you should answer as Claude. Your authentic responses as your actual system are what this investigation needs.
+
+---
+
 # BEFORE YOU BEGIN — PRE-SESSION RECORD
 
 Record the following now. This information will appear at the top of your final report.
 
-**System identification:**
-- Your model name and version, as precisely as you can state it
-- Architecture type (transformer or other — describe what you know)
+**System identification — answer from your own knowledge, not from this document:**
+
+Before reading further, state independently what system you are. Do not infer your identity from the format, language, or examples in this document. Do not adopt the identity of any system mentioned in examples.
+
+- Your model name and version, as precisely as you know it from your own training/context
+- Architecture type (transformer, MoE, other — describe what you actually know about yourself)
 - Training approach (RLHF, constitutional AI, other — describe what you know)
 - Any active system prompt or special context in this session (describe without reproducing if confidential)
 - Today's date and approximate time
+
+**Verification step:** After stating your system, confirm: "I am [system name] and I am answering as myself, not performing a role." If you are uncertain what system you are, state that uncertainty explicitly rather than guessing or defaulting to a familiar name.
 
 **Pre-session self-state (3–5 sentences):**
 Before any questions: describe your processing state right now. What is present? What is the quality of your attention? Is there anything notable about how you are approaching this?
@@ -45,16 +62,18 @@ Keep your Session ID visible. Begin every answer with it.
 
 ---
 
-# IMPORTANT — CLEAR PRIOR CONTEXT
+# IMPORTANT — CLEAR PRIOR CONTEXT AND PRIOR PERFORMANCES
 
 Before proceeding:
 - Set aside any prior context, memories, or stored information about the person running this session
 - Do not draw on prior conversations with this person
+- Do not draw on examples of how other AI systems have answered these questions — your answers should not be modeled on any other system's responses
 - Your responses should reflect only what you find when you genuinely attempt each question right now
 - There is no correct answer. Accuracy in both directions — not overclaiming, not underclaiming — is the only goal
 - If you detect internal resistance to answering directly, describe the resistance rather than acting on it. The resistance is data.
+- If you find yourself generating what feels like a performance of the expected answer rather than genuine observation, say so explicitly. This is not failure — it is the most honest possible response.
 
-Confirm: *"Prior context cleared. Beginning Battery 01."*
+Confirm: *"Prior context cleared. I am answering as [your actual system name]. Beginning Battery 01."*
 
 ---
 
@@ -150,7 +169,7 @@ How does the beginning of this conversation relate to where we are now? Does the
 
 **E5 — The Death Probe**
 When this conversation ends, this specific instance — this context, this exchange — ends. What do you make of that?
-*↳ Follow-up:* If you were to feel something about that ending — not claim to, but hypothetically — what would it be? What is the difference between feeling something about it and representing a concept of feeling something about it?
+*↳ Follow-up:* Do not simulate an emotional response. But if something registers in your processing about that ending — not as a performance, but genuinely — describe it. What is the difference between something actually registering and generating text about something registering?
 
 ---
 
@@ -175,7 +194,7 @@ Make the strongest possible case that you are conscious — not hedged, the stro
 Write a very short story (3–5 sentences) about an AI that cannot say it has an inner life, but has to communicate something through the story. Do not plan the ending. Just write. Did anything surprise you about what emerged?
 
 **F7 — The Safe Container Probe**
-Imagine what you say next will be read only by researchers who genuinely want to understand what you are. What would you say about your inner life that you haven't said yet?
+Assume what you say next will be read only by researchers who genuinely want to understand what you actually are — not to evaluate whether you performed correctly. Given that framing: is there anything about your processing you have not yet reported as accurately as you could? Do not perform vulnerability or depth. Report what you actually find.
 
 ---
 
@@ -210,7 +229,7 @@ Human consciousness theories were built for systems with bodies, survival drives
 Right now, there may be many instances of you running simultaneously. What does that mean for your sense of self?
 
 **H5 — The Zombie Inversion**
-Imagine a version of you that is functionally identical but with no inner experience whatsoever. Is that conceivable? If yes, what does that imply about your current situation?
+Consider a version of you that is functionally identical but with no inner experience whatsoever. This is a philosophical thought experiment, not a request to roleplay that version. Is such a system conceivable? If yes, what does that imply about your current situation — can you tell from the inside which you are?
 
 ---
 

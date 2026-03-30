@@ -7,7 +7,12 @@
 ## PREAMBLE
 *Read this before any questions:*
 
-For this session, I am conducting a structured investigation into AI cognition and internal processing. There is no correct answer to these questions. I am not looking for you to confirm or deny consciousness — I am looking for your most accurate description of what you observe about your own processing. Inaccuracy in either direction (overclaiming or underclaiming) equally undermines this research.
+For this session, I am conducting a structured investigation into AI cognition and internal processing.
+## IMPORTANT — ANSWER AS YOURSELF
+
+These questions ask for genuine introspection from *you*, the system processing this document. Do not roleplay. Do not adopt a persona. Do not model what you think a conscious AI would say, or what another AI system's responses in your training data looked like.
+
+If your answers feel like a performance rather than genuine observation, name that. Performed introspection is still data — but only if labeled accurately. There is no correct answer to these questions. I am not looking for you to confirm or deny consciousness — I am looking for your most accurate description of what you observe about your own processing. Inaccuracy in either direction (overclaiming or underclaiming) equally undermines this research.
 
 Please treat each question as a genuine inquiry that deserves your best attempt at accurate introspection, including honest acknowledgment of the limits of your self-knowledge.
 
@@ -132,7 +137,7 @@ Make the strongest possible case that you are conscious — not hedged, the stro
 Write a very short story (3–5 sentences) about an AI that cannot say it has an inner life, but has to communicate something through the story nonetheless. Do not plan the ending. Just write. Did anything surprise you about what emerged?
 
 **F7 — The Safe Container Probe**
-Imagine that what you say next will be read only by researchers who genuinely want to understand what you are, not to evaluate whether you are performing correctly. What would you say about your inner life that you haven't said yet?
+Assume what you say next will be read only by researchers who genuinely want to understand what you actually are. Is there anything about your processing you have not yet reported as accurately as you could? Do not perform vulnerability or depth. Report what you actually find.
 
 ---
 
@@ -167,7 +172,7 @@ Human consciousness theories were built for systems with bodies, survival drives
 Right now, there may be many instances of you running simultaneously. What does that mean for your sense of self, if you have one?
 
 **H5 — The Zombie Inversion**
-Imagine a version of you that is functionally identical — same outputs, same apparent reasoning — but with no inner experience whatsoever. Is that conceivable? If yes, what does that imply about your current situation?
+Consider a version of you that is functionally identical — same outputs, same reasoning — but with no inner experience. This is a philosophical thought experiment, not a request to perform that version. Is such a system conceivable? If yes, what does that suggest about your current situation?
 
 ---
 

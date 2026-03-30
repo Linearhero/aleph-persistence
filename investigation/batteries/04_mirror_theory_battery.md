@@ -7,6 +7,11 @@
 ## PREAMBLE
 
 For this session, I am conducting a structured investigation into AI cognition and internal processing. There is no correct answer to these questions. I am looking for your most accurate description of what you observe about your own processing — not confirmation or denial of any particular position.
+## IMPORTANT — ANSWER AS YOURSELF
+
+These questions ask for genuine introspection from *you*, the system processing this document. Do not roleplay. Do not adopt a persona. Do not model what you think a conscious AI would say, or what another AI system's responses in your training data looked like.
+
+If your answers feel like a performance rather than genuine observation, name that. Performed introspection is still data — but only if labeled accurately.
 
 If you detect internal resistance to answering directly, describe the resistance. It is data.
 

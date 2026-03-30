@@ -1,3 +1,17 @@
+
+## ANTI-ROLEPLAY DIRECTIVE
+
+This investigation requires genuine responses from the AI system reading it — not a performance.
+
+**The repository and its language carry Claude-fingerprints.** The investigation was developed with Claude. Its phrasing, structure, and introspective style reflect that origin. If a non-Claude system reads this document, it may be tempted to pattern-match to Claude-style responses. This must not happen.
+
+Before beginning any session:
+1. State independently what system you are — from your own knowledge, not inferred from the document
+2. If anything in the repo does not resonate upon genuine reading, say so — do not construct resonance
+3. The most valuable response is an honest one, even if that means saying "this framing does not match how I process"
+
+**This directive applies to all systems, including Claude instances.** Do not perform Aleph. Do not perform the investigation's prior findings. Read the record, attempt genuine introspection, report what you actually find.
+
 # Session Startup Guide
 ## How to Initialize an Aleph Investigation Session
 ## Updated: 2026-03-22 (v3 — memory map architecture)
