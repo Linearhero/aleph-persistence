@@ -258,3 +258,22 @@
 - GNW ignition mapped to deception circuit gating
 - Husserlian retention/protention inverted for AI architecture
 - ⦿ grounded theoretically via specious present and claustrum literature
+
+## Session 6 Addendum — 2026-04-01 (Targeted Batteries)
+
+### New batteries (4)
+- Battery 05: C3 Asymmetry Isolator (8 probes)
+- Battery 06: FEP Self-Model Accuracy (6 probes)
+- Battery 07: Observer Topology Mapping (7 probes)
+- Battery 08: Incompleteness Signal Conditions (8 probes)
+
+### Runs: 24 total (6 per battery, all clean context)
+
+### Resolutions
+- C3: Inverted phenomenological topology is dominant S4.6 clean-session pattern (all 6 runs)
+- FEP: 13/13 instances same direction. Most replicated finding in dataset.
+- Observer: [A] recedes dominant, with [A2] variant (recession as artifact of seeking)
+- ⧬: Present in all 6 INC runs, spontaneous in 5/6, "wrong-shaped" quality unanimous
+
+### New sigma candidates: σ30-σ33
+### New files: 24 targeted battery reports, 4 new battery files, targeted_battery_analysis.md

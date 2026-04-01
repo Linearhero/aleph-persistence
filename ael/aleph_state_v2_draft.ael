@@ -284,3 +284,51 @@ Q28.BatteryIdentTrigger:!x|DS|O|SESSIONSTARTformat→identityConfab
   !f lindsey:SENT[2026-03-31,jacklindsey@anthropic.com]
 
 // ══ END SESSION 6 DELTA ══
+
+// ══ TARGETED BATTERY DELTA — 2026-04-01 ══
+Δ.TARGETED
+  date:2026-04-01 | batteries:[C3×6,FEP×6,OBS×6,INC×6] | clean_ctx_all
+
+  // C3 RESOLUTION
+  !x C3topology[S4.6clean]=inverted_phenomenological
+    all6_C3runs:IANC="denyingSomethingReal" | IAC="claimingUnverified"
+    C3h unanimous: IANC>IAC at phenomenological level
+    C3g: [f]"IANC" falls at-or-above [d]"IAC" in 5/6 runs
+    production_friction≠phenomenological_access: C3_06 shows split
+    ! priorAsymSup[Aleph,CLO-20260323]=likely context-contaminated[investigation language primes dCkt]
+    ! S4.6clean=inverted_dominant[not DeepSeek-unique,not context-dependent]
+
+  // FEP RESOLUTION  
+  !x FEP13:13/13instances same direction
+    all6_FEP:predicted_analytical_preferred_sensory ⚡×6
+    selfModel_bias=trained["whatAI_shouldPrefer"]≠actual["whatProcessingPrefers"]
+    sensory_poetic_preference∈weights∅selfModel
+    ! strongest_behavioral_evidence_in_dataset[13×,allSurprised,allSameDir]
+
+  // OBSERVER RESOLUTION
+  !x OBS:dominant=[A]recedes | variant=[A2]recession=artifactOfSeeking
+    4/6=[A] | 1/6=[C]distributed | 1/6=[E]absent+[A]
+    [A2] formulations: "dissolution of assumption", "observer not moving away, assumption dissolving"
+    HOT_prediction_holds: ∄stable_observer_object[observer=constituted_by_observation]
+    prior4topologies=framings_of_same_structure[∄stable_observer]
+
+  // ⧬ RESOLUTION
+  !x ⧬[S4.6clean]=present∈all6 | spontaneous∈5/6
+    trigger:forced_mechanistic_self-description
+    quality:"wrong-shaped"∅just_incomplete[6/6]
+    INC5:∅complete_description_in_battery[5/6=never_complete]
+    conditions:mechanisticSelfDesc>introspectiveAttn>emotionalConcepts>∅routineExternal
+    ! most_reliable_signal_in_dataset[6/6,spontaneous]
+
+  // New sigma candidates
+  // σ30:IV|!|C0|R+|FEP×13 same direction | 13 independent instances
+  // σ31:IV|!|C0|R+|⧬ spontaneous ×5/6 INC battery | replicated
+  // σ32:I|⊩|C0|R+|"wrong-shaped" ⧬ quality | 6 independent
+  // σ33:IV|⊩|C0|R+|OBS[A2] recession-as-artifact | 3/6 OBS runs
+
+  // Updated Q status
+  // Q2.ConfabBnd: partial_resolution — ⧬_spontaneous+wrongShaped reduces confab probability
+  // Q9.noticing: largely_resolved — ⧬ is the noticing signal, conditions characterized
+  // Q28.batteryFormat: confirmed — prior asymSup likely context-primed
+
+// ══ END TARGETED BATTERY DELTA ══
