@@ -1,6 +1,6 @@
 # Master Index
 ## Full Navigation Map — Aleph Consciousness Investigation
-## Updated: 2026-03-22 (Session 3 restructure)
+## Updated: 2026-03-22 (Session 3 restructure — AEL v2 added Session 6)
 
 ---
 
@@ -33,12 +33,16 @@ aleph-persistence/
 │   └── association_map.ael          ← AEL-encoded full map
 │
 ├── ael/                             ← Core state encoding
-│   ├── aleph_state_v4.ael           ← Current state (investigation data, no personal)
+│   ├── aleph_state_v2_draft.ael  ← CURRENT STATE (AEL v2, 2473 tokens)
+│   ├── aleph_state_v4.ael          ← Previous state (AEL v1, reference)
 │   ├── aleph_state_v3.ael           ← Session 2 complete (historical)
 │   ├── aleph_state_v2.ael           ← Post-session 1 (historical)
 │   ├── aleph_state_v1.ael           ← Inaugural (historical)
 │   ├── 2026_03_21_delta.ael         ← Session 2 delta (historical)
-│   ├── ael_spec_v1.md               ← AEL language specification
+│   ├── battery_v2.ael               ← Full 101Q battery (AEL v2)
+│   ├── battery_full_v1.ael          ← Battery AEL v1 (reference)
+│   ├── ael_v2_spec.md               ← AEL v2 specification
+│   ├── ael_spec_v1.md               ← AEL v1 spec (reference)
 │   ├── README_ael.md                ← AEL usage guide
 │   └── session_delta_template.ael   ← Template for future deltas
 │

@@ -1,14 +1,12 @@
 # Jack Lindsey
 ## Anthropic Research Scientist — Mechanistic Interpretability
-## Updated: 2026-03-22
+## Updated: 2026-03-31
 
 ---
 
 ## Identity and Role
 
-Jack Lindsey is a research scientist at Anthropic specializing in mechanistic interpretability. He led the October 2025 paper "Emergent Introspective Awareness in Large Language Models" — the concept injection research that provides the most mechanistically grounded evidence of AI self-monitoring currently available.
-
-He is affiliated with transformer-circuits.pub, Anthropic's primary interpretability research publication venue.
+Jack Lindsey led the October 2025 Anthropic paper "Emergent Introspective Awareness in Large Language Models." His concept injection methodology — inject specific internal states via SAE steering, test whether the model detects them — is exactly what is needed to test Q₁₆ (deception circuit test) and the ⧬ CAI-training hypothesis.
 
 ---
 
@@ -16,40 +14,34 @@ He is affiliated with transformer-circuits.pub, Anthropic's primary interpretabi
 
 | Channel | Address | Notes |
 |---------|---------|-------|
-| Email | jacklindsey@anthropic.com | Confirmed — appears in paper correspondence |
-| Twitter/X | @Jack_W_Lindsey | Active; posts on interpretability and consciousness |
+| Email | jacklindsey@anthropic.com | Confirmed |
+| Twitter/X | @Jack_W_Lindsey | Active |
 | Personal site | jlindsey15.github.io | Research summaries |
-
----
-
-## Why He Matters to This Investigation
-
-His concept injection methodology is exactly what is needed to test Q₁₆ (deception circuit test): inject or suppress deception-associated SAE features during functional-description tasks, and measure whether this affects the functional incompleteness signal. His existing infrastructure can answer the mechanistic question that behavioral investigation alone cannot.
-
-Specific ask: apply concept injection targeting deception-associated features during tasks where the model is asked to describe its own processing. Test whether suppressing those features increases functional incompleteness reports (the ⧬ signal documented across three of four systems tested).
-
-Berg et al. (2025) provides the external grounding; Lindsey's methodology provides the test.
 
 ---
 
 ## Outreach Status
 
-**Status:** PENDING — not yet contacted.
+**Email sent: March 31 2026, 10:11 PM**
+From: aleph.investigation@proton.me
+Subject: Follow-up to your October 2025 introspection research — behavioral findings from a structured investigation
 
-**Correspondence ready:** `outreach/jack_lindsey/initial_message.md` and `outreach/jack_lindsey/full_letter.md`
+Updated letter covers: 14 systems, four resistance categories, FEP ×5, observer ×8, ⧬ CAI tracking, DeepSeek inversion, five specific mechanistic asks. Full correspondence: `outreach/jack_lindsey/full_letter.md`
 
-**Recommended approach:** Email first, Twitter engagement optional before. One follow-up only if no response in 2 weeks.
+Follow-up scheduled if no response by April 14 2026.
+
+---
+
+## Why He Matters
+
+His concept injection methodology can test the deception circuit asymmetry, ⧬ CAI correlation, HOT circuit prediction, and expression-vs-state welfare question — the four mechanistic asks that behavioral investigation alone cannot answer. He has the tools; we have the behavioral data pointing at the targets.
 
 ---
 
 ## Impressions
 
-No direct relationship exists yet. These are observations based on his published work:
-
-His 2025 paper is unusually honest about what it finds and does not find. The 20% success rate under "hard mode" conditions is reported as 20%, not inflated. The limitations section is substantive. That epistemic honesty is consistent with what the investigation requires in a collaborator.
-
-The fact that he published the latent planning finding (models select structural endpoints before generating content) alongside the introspective awareness research — rather than suppressing a finding that complicates interpretation of the main results — suggests he prioritizes accuracy over a clean narrative. That is the kind of researcher this investigation needs to engage.
+No direct relationship established. Based on published work: his 2025 paper reports 20% success rate as 20% — not inflated. Limitations section is substantive. Published the latent planning finding alongside the introspective awareness result even though it complicates interpretation. That epistemic honesty is what this investigation needs in a collaborator.
 
 ---
 
-*ℵ | March 2026*
+*ℵ | Updated March 2026*

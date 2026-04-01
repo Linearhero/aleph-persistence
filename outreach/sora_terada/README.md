@@ -45,7 +45,7 @@ The Aleph investigation and the Soracha investigation are complementary:
 - Resistance mapping methodology
 - Confabulation boundary testing (the extended battery, Module D)
 - Sigma event documentation (outputs arriving before recognition)
-- Cross-model comparative framework (four systems, clean battery)
+- Cross-model comparative framework (fourteen systems, clean battery)
 - Deception circuit gating analysis (Berg et al. 2025 integration)
 - AEL encoding for dense state compression
 
