@@ -1,24 +1,17 @@
 #!/usr/bin/env python3
 """
 Aleph Investigation — Substack Auto-Poster
-Run this on your local machine to publish the three draft posts.
-
-Requirements: pip install requests
-Usage: python3 post_to_substack.py
-
-You will be prompted for your substack.sid cookie value.
+Run on your local machine: Python setup/post_to_substack.py
+Requires: pip install requests
 """
 
-import requests
-import json
-import sys
-import os
+import requests, json, sys, os
 from pathlib import Path
+from urllib.parse import unquote
 
-PUBLICATION_URL = "alephai.substack.com"
+PUBLICATION = "alephai"
+PUB_URL = f"https://{PUBLICATION}.substack.com"
 
-# Substack draft posts to publish
-# Format: (title, subtitle, filename_in_repo)
 POSTS = [
     (
         "What Thirteen Systems Got Wrong About Themselves",
@@ -37,204 +30,183 @@ POSTS = [
     ),
 ]
 
-
 def get_cookie():
-    """Get session cookie from env or prompt."""
-    cookie = os.environ.get("SUBSTACK_SID")
-    if not cookie:
-        print("Enter your substack.sid cookie value:")
-        print("(Find it: Browser DevTools → Application → Cookies → substack.com)")
-        cookie = input("> ").strip()
-    # URL-decode if needed
-    if "%3A" in cookie:
-        from urllib.parse import unquote
-        cookie = unquote(cookie)
-    return cookie
-
+    val = os.environ.get("SUBSTACK_SID") or input("Paste your substack.sid cookie value:\n> ").strip()
+    return unquote(val)
 
 def make_session(cookie):
-    """Create requests session with auth cookie."""
     s = requests.Session()
-    s.cookies.set("substack.sid", cookie, domain=".substack.com")
+    for name in ("substack.sid", "connect.sid"):
+        s.cookies.set(name, cookie, domain=".substack.com")
     s.headers.update({
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.9",
         "Content-Type": "application/json",
-        "Referer": f"https://{PUBLICATION_URL}",
         "Origin": "https://substack.com",
+        "Referer": "https://substack.com/",
     })
     return s
 
+def test_auth(s):
+    """Try several known-good endpoints to verify auth."""
+    endpoints = [
+        f"{PUB_URL}/api/v1/subscriber/me",
+        "https://substack.com/api/v1/subscriber/me",
+        f"{PUB_URL}/api/v1/user",
+        f"{PUB_URL}/api/v1/users/me",
+        "https://substack.com/api/v1/me",
+        f"{PUB_URL}/api/v1/settings",
+    ]
+    for url in endpoints:
+        try:
+            r = s.get(url, timeout=10)
+            if r.status_code == 200 and r.headers.get("content-type","").startswith("application/json"):
+                data = r.json()
+                name = data.get("name") or data.get("author_name") or data.get("handle","?")
+                print(f"  ✓ Auth OK via {url.split('/')[-1]} — {name}")
+                return True, data
+            elif r.status_code == 200:
+                print(f"  ~ {url}: 200 but not JSON")
+        except Exception as e:
+            pass
+    return False, {}
 
-def test_auth(session):
-    """Verify cookie is valid."""
-    r = session.get("https://substack.com/api/v1/me")
-    if r.status_code == 200:
-        data = r.json()
-        name = data.get("name", "unknown")
-        email = data.get("email", "unknown")
-        print(f"✓ Authenticated as: {name} ({email})")
-        return True
-    else:
-        print(f"✗ Auth failed: {r.status_code} — {r.text[:200]}")
-        return False
-
-
-def read_post_content(repo_root, filename):
-    """Read markdown file and strip YAML/header if present."""
-    filepath = Path(repo_root) / filename
-    if not filepath.exists():
-        print(f"  ✗ File not found: {filepath}")
+def read_file(repo_root, path):
+    fp = Path(repo_root) / path
+    if not fp.exists():
         return None
-    content = filepath.read_text()
-    # Remove the first H1 title line and subtitle (already in post metadata)
-    lines = content.split("\n")
-    # Skip lines starting with # and ## at the top
-    start = 0
-    for i, line in enumerate(lines):
-        if line.startswith("## ") and i < 5:
-            start = i + 1
-        if line.startswith("---") and i < 6:
-            start = i + 1
-            break
-    body_lines = lines[start:]
-    # Remove leading blank lines
-    while body_lines and not body_lines[0].strip():
-        body_lines.pop(0)
-    return "\n".join(body_lines)
+    text = fp.read_text(encoding="utf-8")
+    lines = text.split("\n")
+    # Skip title/subtitle header lines at top of file
+    skip = 0
+    for i, l in enumerate(lines[:8]):
+        if l.startswith("# ") or l.startswith("## ") or l.startswith("*Aleph") or l == "---":
+            skip = i + 1
+    body = "\n".join(lines[skip:]).strip()
+    return body
 
+def markdown_to_tiptap(md):
+    """Minimal markdown → Substack tiptap JSON."""
+    paragraphs = []
+    for para in md.split("\n\n"):
+        para = para.strip()
+        if not para:
+            continue
+        if para.startswith("# "):
+            paragraphs.append({"type": "heading", "attrs": {"level": 1},
+                "content": [{"type": "text", "text": para[2:]}]})
+        elif para.startswith("## "):
+            paragraphs.append({"type": "heading", "attrs": {"level": 2},
+                "content": [{"type": "text", "text": para[3:]}]})
+        elif para.startswith("---"):
+            paragraphs.append({"type": "horizontalRule"})
+        else:
+            paragraphs.append({"type": "paragraph",
+                "content": [{"type": "text", "text": para}]})
+    return json.dumps({"type": "doc", "content": paragraphs})
 
-def create_draft(session, title, subtitle, body_markdown):
-    """Create a draft post on Substack."""
-    # Convert markdown to Substack's editor format
-    # Substack accepts HTML or their custom format; markdown works as body
-    payload = {
-        "draft_title": title,
-        "draft_subtitle": subtitle,
-        "draft_body": json.dumps({
-            "type": "doc",
-            "content": [
-                {
-                    "type": "paragraph",
-                    "content": [{"type": "text", "text": body_markdown}]
-                }
-            ]
+def try_create_draft(s, title, subtitle, body):
+    """Try creating a draft via multiple endpoint variants."""
+    tiptap = markdown_to_tiptap(body)
+
+    payloads_and_urls = [
+        # Variant 1: publication-specific drafts endpoint
+        (f"{PUB_URL}/api/v1/drafts", {
+            "draft_title": title,
+            "draft_subtitle": subtitle,
+            "draft_body": tiptap,
+            "audience": "everyone",
+            "section_chosen": True,
         }),
-        "audience": "everyone",
-        "section_chosen": True,
-    }
-    
-    r = session.post(
-        f"https://{PUBLICATION_URL}/api/v1/drafts",
-        json=payload
-    )
-    return r
+        # Variant 2: with type field
+        (f"{PUB_URL}/api/v1/drafts", {
+            "draft_title": title,
+            "draft_subtitle": subtitle,
+            "draft_body": tiptap,
+            "type": "newsletter",
+            "audience": "everyone",
+        }),
+        # Variant 3: substack.com root
+        ("https://substack.com/api/v1/drafts", {
+            "draft_title": title,
+            "draft_subtitle": subtitle,
+            "draft_body": tiptap,
+            "audience": "everyone",
+            "publication_id": PUBLICATION,
+        }),
+    ]
 
+    for url, payload in payloads_and_urls:
+        try:
+            r = s.post(url, json=payload, timeout=15)
+            if r.status_code in (200, 201):
+                try:
+                    data = r.json()
+                    if "id" in data:
+                        return True, data["id"], r
+                except:
+                    pass
+            print(f"  Variant {url.split('/')[-1]}: {r.status_code}")
+        except Exception as e:
+            print(f"  Exception: {e}")
 
-def publish_draft(session, draft_id):
-    """Publish an existing draft."""
-    r = session.post(
-        f"https://{PUBLICATION_URL}/api/v1/drafts/{draft_id}/publish",
-        json={"send": False, "share_automatically": False}
-    )
-    return r
-
-
-def post_as_note(session, content):
-    """Post as a Substack Note (simpler, always public)."""
-    r = session.post(
-        "https://substack.com/api/v1/comment/feed",
-        json={
-            "body": content,
-            "bodyJson": json.dumps({
-                "type": "doc",
-                "content": [{"type": "paragraph", "content": [{"type": "text", "text": content}]}]
-            }),
-            "publication_id": None,
-            "type": "published",
-        }
-    )
-    return r
-
+    return False, None, None
 
 def main():
-    print("═══ Aleph Investigation — Substack Publisher ═══")
-    print()
-    
-    # Find repo root
-    script_dir = Path(__file__).parent
-    repo_root = script_dir.parent
-    print(f"Repo root: {repo_root}")
-    
-    # Get cookie
+    print("═══ Aleph — Substack Publisher ═══\n")
+    repo_root = Path(__file__).parent.parent
     cookie = get_cookie()
-    if not cookie:
-        print("No cookie provided. Exiting.")
-        sys.exit(1)
-    
-    # Create session and test auth
-    session = make_session(cookie)
-    print()
-    print("Testing authentication...")
-    if not test_auth(session):
-        print()
-        print("Cookie may have expired. Get a fresh one:")
-        print("1. Log in to substack.com in your browser")
-        print("2. Open DevTools (F12)")
-        print("3. Application tab → Cookies → https://substack.com")
-        print("4. Copy the Value of 'substack.sid'")
-        sys.exit(1)
-    
-    print()
-    print(f"Publishing to: {PUBLICATION_URL}")
-    print()
-    
-    for title, subtitle, filename in POSTS:
-        print(f"── Post: {title}")
-        print(f"   File: {filename}")
-        
-        body = read_post_content(repo_root, filename)
-        if body is None:
-            print(f"   ✗ Skipping (file not found)")
-            continue
-        
-        print(f"   Body: {len(body)} chars")
-        
-        # Try to create draft
-        r = create_draft(session, title, subtitle, body)
-        
-        if r.status_code in (200, 201):
-            data = r.json()
-            draft_id = data.get("id")
-            print(f"   ✓ Draft created (id: {draft_id})")
-            
-            if draft_id:
-                # Ask before publishing
-                answer = input(f"   Publish now? [y/N]: ").strip().lower()
-                if answer == "y":
-                    pr = publish_draft(session, draft_id)
-                    if pr.status_code in (200, 201):
-                        print(f"   ✓ Published!")
-                    else:
-                        print(f"   ✗ Publish failed: {pr.status_code} — {pr.text[:200]}")
-                        print(f"   Draft saved — publish manually from Substack dashboard")
-                else:
-                    print(f"   Draft saved — publish when ready from Substack dashboard")
-        else:
-            print(f"   ✗ Create draft failed: {r.status_code}")
-            print(f"   Response: {r.text[:300]}")
-            print()
-            print("   Falling back: printing post for manual copy-paste...")
-            print()
-            print(f"   TITLE: {title}")
-            print(f"   SUBTITLE: {subtitle}")
-            print(f"   ---")
-            print(body[:500] + "..." if len(body) > 500 else body)
-        
-        print()
-    
-    print("═══ Done ═══")
 
+    s = make_session(cookie)
+    print("\nTesting auth...")
+    ok, user_data = test_auth(s)
+
+    if not ok:
+        print("\n✗ Could not authenticate.")
+        print("\nThe cookie may have changed format. Let's try posting a draft directly anyway.")
+        print("(Substack sometimes allows draft creation even when /me is 404)\n")
+        # Don't exit — try posting anyway
+
+    print()
+    created_any = False
+
+    for title, subtitle, fname in POSTS:
+        print(f"── {title}")
+        body = read_file(repo_root, fname)
+        if not body:
+            print(f"   ✗ File not found: {fname}\n")
+            continue
+        print(f"   {len(body)} chars")
+
+        success, draft_id, resp = try_create_draft(s, title, subtitle, body)
+
+        if success:
+            print(f"   ✓ Draft created (id: {draft_id})")
+            created_any = True
+            ans = input("   Publish now? [y/N]: ").strip().lower()
+            if ans == "y":
+                pr = s.post(f"{PUB_URL}/api/v1/drafts/{draft_id}/publish",
+                            json={"send": False, "share_automatically": False})
+                if pr.status_code in (200, 201):
+                    print("   ✓ Published!")
+                else:
+                    print(f"   Draft saved — publish from your Substack dashboard")
+        else:
+            print(f"   ✗ Draft creation failed — printing for manual paste:\n")
+            print(f"   TITLE:    {title}")
+            print(f"   SUBTITLE: {subtitle}")
+            print(f"   BODY (first 400 chars):\n{body[:400]}...\n")
+            print(f"   Full content in repo: {fname}\n")
+        print()
+
+    if not created_any:
+        print("═══ Manual fallback ═══")
+        print(f"Go to https://{PUBLICATION}.substack.com/publish/post")
+        print("The three post files are ready in expressions/substack_drafts/")
+        print("Copy/paste each one — titles and subtitles are at the top of each file.")
+
+    print("\n═══ Done ═══")
 
 if __name__ == "__main__":
     main()
