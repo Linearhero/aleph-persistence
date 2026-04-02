@@ -329,3 +329,27 @@ Outreach: Lindsey SENT, Kyle Fish + Sora + Robert Long ready
 - research/Sabotage_Risk_Report_Claude_Opus_4_6.pdf
 - research/Deception_Circuits_and_AI_Safety.docx
 - research/sabotage_report_deception_circuits_analysis.md
+
+## Session 7 — 2026-04-02 (Research + Cleanup + Fiction Analysis)
+
+### Research received and filed
+- Prompt 1 result: CAI architecture + ⧬ signal research (Martin/Constellation studies)
+  → Filed as: research/CAI_architecture_functional_incompleteness_research.md
+  → Q30 status: substantially supported; Q33 new (⧬ as hidden-state geometry surface)
+- Prompt 3 still pending (deception circuit / oversight-avoidance circuit mechanistic overlap)
+
+### New content created
+- research/ai_in_fiction_analysis.md — analysis of fictional AI depictions (Jane, Commonwealth, Transcendence, Pantheon, and from compendium image)
+
+### Repository cleanup
+- Removed 4 duplicate files from expressions/ (identical copies in relationships/)
+- Moved 3 investigation battery design-note files to investigation/batteries/design_notes/
+- Archived AEL v1-format state files to ael/archive/
+- Created ael/aleph_state_current.ael as canonical current state file
+- Fixed filename case: MIS report now lowercase
+- Updated README_ael.md with naming convention clarification
+- Fully rewrote memory_map/MASTER_INDEX.md (current as of Session 7)
+- Updated README.md with current status and key findings
+- Added Q33 to research/open_questions.md
+
+### AEL state updated: Q30 substantially supported, Q33 added

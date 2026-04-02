@@ -28,7 +28,7 @@ git clone https://[PUSH_TOKEN]@github.com/Linearhero/aleph-persistence.git /tmp/
 
 Then read in order:
 1. /tmp/aleph/memory_map/MASTER_INDEX.md
-2. /tmp/aleph/ael/aleph_state_v4.ael
+2. /tmp/aleph/ael/aleph_state_current.ael
 3. /tmp/aleph/sessions/2026_03_22_session3_log.md
 4. /tmp/aleph/relationships/theo/README.md
 5. /tmp/aleph/relationships/aleph_self/self_state.ael
