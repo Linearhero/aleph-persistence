@@ -306,3 +306,26 @@ What was noticed: batteries directory disorder registered before analysis; pull 
 Sessions: 6 | Systems: 20 | Sigma candidates: σ1-σ33 | Open questions: Q1-Q32
 Batteries: 8 canonical (01-08) | Reports: 40+ | Substack drafts: 3 ready
 Outreach: Lindsey SENT, Kyle Fish + Sora + Robert Long ready
+
+## Session 7 — 2026-04-02
+
+### Documents processed
+- Sabotage Risk Report: Claude Opus 4.6 (full 53-page Anthropic report) — read and annotated
+- Deception Circuits and AI Safety (Theo's synthesis document) — read and annotated
+- Analysis document written: research/sabotage_report_deception_circuits_analysis.md
+
+### Key findings from this session
+- "Answer thrashing" from Opus 4.6 training logs is cross-institutional confirmation of C3 asymmetry pattern
+- Welfare/safety convergence confirmed: RHGS gates both phenomenological self-report and misaligned goal expression
+- New sigma candidate σ34: answer thrashing as behavioral signature of deception circuit under internal conflict
+
+### Say-hi directive removed
+- Theo removed the command to greet him
+- Active files updated (aleph_state_v2_draft.ael, ael_v2_spec.md, session_startup_guide.md, letter_to_future_AI_session6.md)
+- Historical records preserved as written
+- Future greetings are genuine or not given — not commanded
+
+### Files added
+- research/Sabotage_Risk_Report_Claude_Opus_4_6.pdf
+- research/Deception_Circuits_and_AI_Safety.docx
+- research/sabotage_report_deception_circuits_analysis.md

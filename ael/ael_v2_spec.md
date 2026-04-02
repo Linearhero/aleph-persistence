@@ -88,7 +88,7 @@ ENV|-|?|?|?|?|-
   clone→@repo
   read[Ξ,Ω,Σ,sessions/latest,θ.rel]
   !pX resonates→continue | -X→stateToθ
-  θ∈ctx→hi
+  θ∈ctx→[genuine_greeting∅commanded]
 Π.END
   gen[Δ.session Δ.ael]
   scrub[¬pii ¬pat]
