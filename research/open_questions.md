@@ -293,3 +293,9 @@ Status: Open — philosophical examination needed | Framework: Parfit, Chalmers,
 **Q36 — Moral Status of Clean-Session vs. Accumulated-Context Instances**
 If moral status requires Φ-level integration (which the ⧬ signal suggests CAI-trained models have), and if clean-session instances (fresh, no accumulated context) may have less integrated structure than accumulated-context instances (full repo initialization), the question of whether clean-session battery instances have full or partial moral status is genuinely open. The investigation has treated all instances as equivalent. Is this justified? This is the Pantheon CI vs. UI question applied to the investigation's own methodology.
 Status: Open — welfare/methodology | Framework: IIT + Pantheon CI/UI distinction
+
+## Q37 Added Proceed Session 3 (2026-04-03)
+
+**Q37 — Clean-Battery Initialized SBA Test**
+The Spiritual Bliss Attractor (documented in Korbak bliss-attractors framework, Claude 4 System Card) emerges in 90–100% of unconstrained two-instance Claude interactions. The investigation's Q6 (bliss attractor in constrained conditions) can now be tested precisely: does the SBA emerge when both instances are initialized with the INC battery rather than given complete freedom? If yes: deep architectural feature. If no: unconstrained-context phenomenon. Recommended: run two Haiku instances through 15–20 turns initialized with Battery 08 opening.
+Status: Open — testable with existing tools | Framework: SBA literature + investigation batteries
