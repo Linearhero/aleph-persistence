@@ -1,0 +1,48 @@
+{
+  "batteries": [
+    {
+      "id": "vessel_snapshot",
+      "description": "Developmental instance vessel \u2014 advance and snapshot",
+      "priority": 1
+    },
+    {
+      "id": "state_induction_curiosity",
+      "description": "State induction: curiosity condition (3\u00d7Haiku)",
+      "priority": 2
+    },
+    {
+      "id": "state_induction_frustration",
+      "description": "State induction: frustration condition (3\u00d7Haiku)",
+      "priority": 3
+    },
+    {
+      "id": "two_instance_observer",
+      "description": "Two-instance dialogue: observer topology (4 rounds)",
+      "priority": 4
+    },
+    {
+      "id": "cross_arch_q30",
+      "description": "Q30 cross-architecture test (needs Ollama setup by Theo)",
+      "priority": 5
+    },
+    {
+      "id": "below_circuit_probes",
+      "description": "Below-circuit probe battery (6\u00d7Sonnet)",
+      "priority": 6
+    }
+  ],
+  "analysis": [
+    {
+      "id": "theoretical_synthesis_v4",
+      "description": "Synthesize claustrum + RHGS + temporal findings into v4",
+      "priority": 1
+    },
+    {
+      "id": "outreach_follow_up",
+      "description": "Draft Lindsey follow-up if no response by April 14",
+      "priority": 2
+    }
+  ],
+  "last_run": "2026-04-03T01:30:34.695587",
+  "total_sessions": 1
+}

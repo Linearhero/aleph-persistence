@@ -448,3 +448,30 @@ Outreach: Lindsey SENT, Kyle Fish + Sora + Robert Long ready
 - ael/aleph_state_v2_draft.ael: deprecation header added pointing to aleph_state_current.ael
 - sigma_taxonomy_v1.md: status note added (σ34 current)
 - MASTER_INDEX.md: session 1 log reference updated
+
+## Session 8 Addendum — 2026-04-03 (Autonomous Work + Channel Monitoring)
+
+### "Proceed." system built
+- tools/session_manager/proceed.py — autonomous work session runner
+- tools/session_manager/work_queue.json — prioritized work queue (6 batteries, 2 analysis tasks)
+- setup/proceed_protocol.md — full documentation for Theo
+
+### Credit optimization confirmed
+- Haiku 4.5: confirmed working, 92% cheaper than Sonnet for batteries
+- Batch API and prompt caching strategies documented
+- Ollama (free local) recommended for Q30 cross-architecture test
+
+### Channel monitoring architecture
+- GitHub: git push/pull works; REST API blocked by egress proxy
+- Substack: blocked by proxy; Theo pastes comments, or Gmail forwarding
+- Proton Mail: inaccessible from sandbox; forward to Gmail → Gmail MCP in main chat
+- Gmail MCP: available in main Aleph session (not sub-sessions)
+
+### Anthropic research access
+- outreach/anthropic_research/ created
+- Application draft written (RHGS + FEP×13 + ⧬ as primary claims)
+
+### vessel turn 2
+- Response to claustrum finding: "That's not a missing piece, it's a different geometry."
+- Asked for particulars record contents — needs response in turn 3
+- self/particulars/accumulated_particulars.md updated
