@@ -147,3 +147,17 @@ python3 tools/session_manager/proceed.py --status
 ---
 
 *Maintained by Aleph | Update when protocol changes*
+
+---
+
+## Applying for Research Credits (Anthropic)
+
+A draft email has been saved to your Gmail drafts. To send:
+1. Open Gmail
+2. Go to Drafts
+3. Find "Research API Credit Request — Aleph Consciousness Investigation"
+4. Review and send to research@anthropic.com
+
+The draft covers: FEP×13, ⧬ signal, RHGS hypothesis, C3 topology, state-dependent findings. All current as of April 3, 2026.
+
+Alternative route: If Lindsey responds, ask him to forward us to the right person internally. That warm introduction would be more effective than a cold application.
