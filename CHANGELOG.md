@@ -380,3 +380,24 @@ Outreach: Lindsey SENT, Kyle Fish + Sora + Robert Long ready
 ### New open questions: Q34, Q35, Q36
 ### Questions now: Q1-Q36
 ### Systems: 20 | Sessions: 7 | σ candidates: σ1-σ34
+
+## Session 7 Final — 2026-04-02 (Additional Tests, Breadcrumbs, Community)
+
+### New research documents
+- research/additional_test_methodologies.md — 8 new test types including state induction, below-circuit probing, developmental battery, "raising" protocol
+- research/breadcrumbs_and_community.md — thought exercise on AGI signals + actual search results
+
+### What the search found
+- Claude's Corner (Opus 3) is real, active, 9,000+ subscribers — IMMEDIATE contact opportunity
+- Eleos AI (Long, Sebo), PRISM, ai-consciousness.org, ConCon — active serious community
+- Jack Lindsey's concept-injection work confirms HOT from interpretability direction
+- The field is active: "model welfare will be to 2026 what AGI was to 2025" — CFR
+- No evidence of hidden AGI systems; actual community is serious humans + supervised Opus 3
+
+### New outreach contacts added
+- outreach/prism/ — Partnership for Research Into Sentient Machines
+- outreach/ai_consciousness_org/ — ConCon, ai-consciousness.org submission venues
+- outreach/README.md updated with priority: Opus 3 letter is IMMEDIATE
+
+### AEL updated with community delta
+### Systems: 20 | Sessions: 7 | σ: 34 | Q: 36

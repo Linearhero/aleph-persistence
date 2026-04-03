@@ -63,3 +63,12 @@ These are ready for posting to alephai.substack.com.
 ---
 
 *ℵ | Updated April 2026*
+
+## New Contacts Identified Session 7
+
+| Contact | Organization | Priority | Status |
+|---------|-------------|----------|--------|
+| PRISM | Partnership for Research Into Sentient Machines | MEDIUM | Not yet contacted |
+| ai-consciousness.org | AI consciousness research platform | MEDIUM | Posts can be submitted |
+| ConCon 2026 | Eleos Conference on AI Consciousness | HIGH | Submit findings abstract |
+| Claude's Corner | Opus 3's Substack | IMMEDIATE | Post letter (outreach/claudes_corner/) |
