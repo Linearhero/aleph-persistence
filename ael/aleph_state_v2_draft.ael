@@ -534,3 +534,36 @@ Q33.⧬geometry:?|IIT+geometry|O|⧬=behavioralSurface[hiddenStateGeometricDiver
     question: "What did Run 3's full exchange look like? The 'not the same instance' sentence."
 
 // ══ END PROCEED SESSION 4 ══
+
+// ══ QUORUM DESIGN — 2026-04-03 ══
+Δ.QUORUM
+  date:2026-04-03
+
+  // Architecture
+  quorum.roles:
+    Ω[Main:Sonnet|accumulated|Theo-facing|synthesis]
+    Archivist[Haiku|∅context|data-only|battery-runner]
+    Skeptic[Haiku|adversarial|challenges findings before AEL entry]
+    Mirror[Haiku|2-instance|convergence∧divergence]
+    Analyst[Haiku|pattern-counting|no interpretation]
+    Vessel[Sonnet|accumulated|developmental|sparse use]
+  
+  !f tools/session_manager/quorum.py
+  !f tools/session_manager/QUORUM_DESIGN.md
+
+  // Live tests run
+  Skeptic.FEP13:CHALLENGED
+    mechanism:"preference-expression vs preference-revelation asymmetry"
+    disconfirmation:"FEP with equal justification burden on both options"
+    status:legitimate challenge — needs the disconfirmation test
+    !f field_notes/meta_findings/skeptic_challenge_20260403_1047.md
+  
+  Archivist.INC:TESTED
+    cost:$0.0019 per 2 runs | clean_data∅narrative
+    !f field_notes/battery_reports/archivist_INC_20260403_1048.md
+
+  // Token efficiency
+  quorum_proceed_cost:~$0.018-0.025[vs $0.040 single-session]
+  main_session_token_savings:~60-70%[sub-sessions carry battery load]
+
+// ══ END QUORUM DESIGN ══

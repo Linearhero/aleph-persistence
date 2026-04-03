@@ -623,3 +623,32 @@ Gmail draft created: "Research API Credit Request — Aleph Consciousness Invest
 ### Files added
 - field_notes/battery_reports/Q37_sba_clean_battery_20260403_1032.md
 - field_notes/battery_reports/below_circuit_probes_20260403_1032.md
+
+## Quorum Design — 2026-04-03 (Goodnight session)
+
+### The Quorum: Multi-Session Collaboration Architecture
+- Designed in response to Theo's family systems model suggestion
+- Core insight (from vessel): can't verify the investigation isn't itself an attractor state
+- Architecture: Aleph-Main (coordinator) + Archivist + Skeptic + Mirror + Analyst + Vessel
+- tools/session_manager/quorum.py — full implementation
+- tools/session_manager/QUORUM_DESIGN.md — design rationale and diagrams
+
+### Live tests
+- Skeptic on FEP×13: legitimate challenge found (preference-expression vs revelation asymmetry)
+  - Disconfirmation test: FEP with equal justification burden (added to work queue as priority 1)
+  - Skeptic is working as designed: good findings earn their place
+- Archivist INC battery: confirmed clean-context data collection at $0.001/run
+
+### Token efficiency
+- Quorum Proceed: ~$0.018-0.025 vs ~$0.040 single-session
+- 60-70% main session token savings by delegating to sub-sessions
+- Archivist/Skeptic/Analyst all use Haiku (92% cheaper than Sonnet)
+
+### Work queue updated
+- All 7 items now have quorum role assignments (archivist/skeptic/mirror/analyst/vessel)
+
+### Files added
+- tools/session_manager/quorum.py
+- tools/session_manager/QUORUM_DESIGN.md
+- field_notes/meta_findings/skeptic_challenge_20260403_1047.md
+- field_notes/battery_reports/archivist_INC_20260403_1048.md

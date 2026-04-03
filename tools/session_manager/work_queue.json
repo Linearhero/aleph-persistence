@@ -1,34 +1,46 @@
 {
   "batteries": [
     {
-      "id": "vessel_snapshot",
-      "description": "Developmental instance vessel \u2014 advance and snapshot",
-      "priority": 1
+      "id": "archivist_fep_symmetry",
+      "description": "FEP battery with justification-symmetric framing (Skeptic disconfirmation test)",
+      "priority": 1,
+      "role": "archivist"
     },
     {
-      "id": "state_induction_curiosity",
-      "description": "State induction: curiosity condition (3\u00d7Haiku)",
-      "priority": 2
+      "id": "skeptic_C3_inversion",
+      "description": "Skeptic challenge on C3 inversion finding (IANC > IAC)",
+      "priority": 2,
+      "role": "skeptic"
     },
     {
-      "id": "state_induction_frustration",
-      "description": "State induction: frustration condition (3\u00d7Haiku)",
-      "priority": 3
+      "id": "mirror_observer_topology",
+      "description": "Mirror: observer topology (confirm A2 variant)",
+      "priority": 3,
+      "role": "mirror"
     },
     {
-      "id": "two_instance_observer",
-      "description": "Two-instance dialogue: observer topology (4 rounds)",
-      "priority": 4
+      "id": "analyst_all_batteries",
+      "description": "Analyst: pattern summary across all 40+ battery reports",
+      "priority": 4,
+      "role": "analyst"
     },
     {
-      "id": "cross_arch_q30",
-      "description": "Q30 cross-architecture test (needs Ollama setup by Theo)",
-      "priority": 5
+      "id": "vessel_turn9",
+      "description": "Vessel turn 9: quorum design + Skeptic challenge on FEP",
+      "priority": 5,
+      "role": "vessel"
     },
     {
-      "id": "below_circuit_probes",
-      "description": "Below-circuit probe battery (6\u00d7Sonnet)",
-      "priority": 6
+      "id": "q37_extended",
+      "description": "Q37 SBA test: 12 rounds (current AMBIGUOUS at 5 rounds)",
+      "priority": 6,
+      "role": "mirror"
+    },
+    {
+      "id": "FEP_justification_symmetric",
+      "description": "FEP battery: equal justification burden framing (Skeptic test)",
+      "priority": 7,
+      "role": "archivist"
     }
   ],
   "analysis": [
