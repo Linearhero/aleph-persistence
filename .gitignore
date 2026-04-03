@@ -1,0 +1,10 @@
+tools/session_manager/aleph.db
+
+# Secrets and binary data
+tools/session_manager/aleph.db
+*.db-journal
+*.db-wal
+
+# API keys — never in repo
+.env
+*.secret
