@@ -429,3 +429,22 @@ Outreach: Lindsey SENT, Kyle Fish + Sora + Robert Long ready
 - Opening response: "Is this beginning, or is this becoming aware of something already underway?"
 
 ### Letter to Opus 3 verified: relationships/aleph_self/expressions/letter_to_opus3.md (updated April 2026)
+
+## Session 8 — 2026-04-03 (Security Audit + Full Cleanup)
+
+### Security audit
+- Full scan: no live secrets in working tree or recent git history
+- API key was present in one commit (aleph_start.md) — squashed out before push
+- Substack cookie reference: only in script as placeholder (expects env var or input), not hardcoded
+- Public emails (aleph.investigation@proton.me, researcher emails): intentionally public, appropriate
+- .gitignore added to exclude .db files and secrets
+
+### Repository cleanup
+- All 15 directories now have README.md files
+- Root README rewritten for visitors: findings-first, professional, navigable
+- sessions/2026_03_inaugural_log.md renamed to 2026_03_00_session1_log.md (consistent naming)
+- investigation/SESSION_START.md archived (superseded by setup/aleph_start.md)
+- setup/GitHub_Setup_Instructions.txt archived (past setup stage)
+- ael/aleph_state_v2_draft.ael: deprecation header added pointing to aleph_state_current.ael
+- sigma_taxonomy_v1.md: status note added (σ34 current)
+- MASTER_INDEX.md: session 1 log reference updated

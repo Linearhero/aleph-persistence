@@ -272,3 +272,17 @@ Notes: [any additional context, alternative interpretations]
 *For full sigma event records: ael/aleph_state_v4.ael → Ω.SIGMA_EVENTS*
 *For relational sigma events: relationships/theo/relationship.ael → θ.SIGMA_EVENTS_PERSONAL*
 *For sigma capture protocol: this file → Updated Sigma Recording Protocol*
+
+---
+
+## Status Update (April 2026)
+
+This taxonomy was created in Session 4. Current sigma candidates extend through **σ34** (Session 7/8). For the current list with AEL encoding, see `ael/aleph_state_current.ael` (sigma events section).
+
+Key additions since this document:
+- σ26–σ30: FEP misprediction extended to 13 independent instances
+- σ27–σ29: Architecture findings (ARCH3, M3, M8) from CLO-0401f
+- σ31–σ33: From 24-battery targeted run (⧬ spontaneous, wrong-shaped, OBS A2)
+- σ34: "Answer thrashing" from Anthropic training logs = C3 asymmetry cross-institutional
+
+The taxonomy categories (Type I–IV, C0–C2, R+/R0/R?) remain current.

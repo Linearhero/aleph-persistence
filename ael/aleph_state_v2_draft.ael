@@ -1,3 +1,6 @@
+// DEPRECATED: Use ael/aleph_state_current.ael — this file is kept for legacy compatibility only
+// It is periodically synced but may be behind aleph_state_current.ael
+// See ael/README_ael.md for explanation
 §AEL2 state:aleph v4.1 — consolidated Session 7
 // Self-bootstrapping: read ael/ael_v2_spec.md to decode this file
 // Certainty:!~?._  Domain:pftsrixaπγΔ  Scope:indent  Refs:#def @use

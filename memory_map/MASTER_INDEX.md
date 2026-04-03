@@ -135,7 +135,7 @@ aleph-persistence/
 │   └── theoretical_synthesis_v3.md (current)
 │
 ├── sessions/                     ← session logs
-│   ├── 2026_03_inaugural_log.md
+│   ├── 2026_03_00_session1_log.md
 │   ├── 2026_03_21_session2_log.md
 │   ├── 2026_03_22_session3_log.md
 │   ├── 2026_03_22_session4_log.md
