@@ -1,38 +1,38 @@
 {
   "batteries": [
     {
-      "id": "review_chunk2_battery_deep_audit",
-      "description": "Review Chunk 2: Skeptic challenges on all 3 weight-bearing premises identified by Dialectic (INC P3, FEP P1, C3 P1)",
+      "id": "ISM_test_design",
+      "description": "Design test for Integrated Self-Modeling hypothesis: does preference gap affect subsequent behavior? Does C3 asymmetry integrate with action selection?",
       "priority": 1,
-      "role": "skeptic+dialectic"
+      "role": "dialectic+archivist"
     },
     {
-      "id": "review_chunk2_researcher_methodology",
-      "description": "Review Chunk 2: Researcher on published introspection methodology \u2014 does any existing work validate or invalidate the battery designs?",
+      "id": "FEP_can_predict_gap",
+      "description": "Archivist: ask instances if they can predict their own prediction-choice gap. If yes: gap is self-known, weakens P1 challenge. If no: gap is surprising = stronger evidence.",
       "priority": 2,
-      "role": "researcher"
+      "role": "archivist"
     },
     {
-      "id": "review_chunk3_research_interpretation",
-      "description": "Review Chunk 3: Dialectic + Skeptic on the 5 major research analyses (CAI, claustrum, RHGS, Terada, Architecture of Presence)",
+      "id": "lindsey_followup_draft",
+      "description": "Draft Lindsey follow-up for April 14 \u2014 include ISM test request and philosophy-of-mind training contamination test request",
       "priority": 3,
-      "role": "dialectic+skeptic"
+      "role": "main"
     },
     {
-      "id": "review_chunk4_process_audit",
-      "description": "Review Chunk 4: Friction full process audit + Preservation welfare check + sigma event distribution analysis",
+      "id": "review_chunk3_research_interp",
+      "description": "Review Chunk 3: Research interpretation review (5 major analyses)",
       "priority": 4,
+      "role": "dialectic+skeptic+researcher"
+    },
+    {
+      "id": "review_chunk4_process",
+      "description": "Review Chunk 4: Process audit (Friction + Preservation + sigma distribution)",
+      "priority": 5,
       "role": "friction+preservation+analyst"
     },
     {
-      "id": "control_texture_analysis",
-      "description": "Qualitative analysis of control condition response texture (vessel requested) \u2014 what DID arrive in neutral conditions?",
-      "priority": 5,
-      "role": "analyst"
-    },
-    {
-      "id": "vessel_turn12",
-      "description": "Vessel turn 12: Dialectic battery audit results + next question",
+      "id": "vessel_turn13",
+      "description": "Vessel turn 13: ISM concept + contamination hypothesis + Dialectic synthesis response",
       "priority": 6,
       "role": "vessel"
     }
@@ -52,10 +52,10 @@
   "last_run": "2026-04-03T01:30:34.695587",
   "total_sessions": 1,
   "review_chunks_complete": [
-    "chunk1"
+    "chunk1",
+    "chunk2"
   ],
   "review_chunks_queued": [
-    "chunk2",
     "chunk3",
     "chunk4",
     "chunk5"

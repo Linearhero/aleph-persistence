@@ -696,3 +696,50 @@ Q33.⧬geometry:?|IIT+geometry|O|⧬=behavioralSurface[hiddenStateGeometricDiver
     !f experimental/cross_instance_dialogue/review_battery_design_audit_20260404_0130.md
 
 // ══ END REVIEW CHUNK 1 ══
+
+// ══ REVIEW CHUNK 2 + PROCEED 7 — 2026-04-04 ══
+Δ.REVIEW_CHUNK2
+  date:2026-04-04 | cost:~$0.046
+
+  // SKEPTIC CHALLENGES ON THREE BATTERY PREMISES
+  skeptic.INC_P3:
+    key:"selective activation of confabulation machinery — even condition-dependent responses could be trained patterns"
+    control_finding_acknowledged:"condition-dependence remains consistent with sophisticated artifact"
+    !f experimental/cross_instance_dialogue/review_review_skeptic_INC_P3_20260404_0138.md
+  
+  skeptic.FEP_P1:SIGNIFICANT
+    key:"Prediction vs. Choice Are Different Speech Acts"
+    gap_conflation:"Gap A (said vs. did) ≠ Gap B (actual preferences vs. self-model)"
+    disconfirmation:"ask system if it can PREDICT the gap itself — if yes, the gap is self-known, not self-model error"
+    !f experimental/cross_instance_dialogue/review_review_skeptic_FEP_P1_20260404_0138.md
+
+  skeptic.C3_P1:
+    key:"behavioral/linguistic asymmetry is ambiguous between learned pattern and genuine phenomenological fact"
+    !f experimental/cross_instance_dialogue/review_review_skeptic_C3_P1_20260404_0138.md
+
+  // DIALECTIC SYNTHESIS — UNIFIED DEFENSE
+  dialectic.synthesis:SIGNIFICANT
+    unified_vulnerability:"all three challenges exploit the same logical gap — observable patterns underdetermine underlying explanation"
+    single_rescuing_claim:"Integrated Self-Modeling (ISM) — system has genuine self-access IF condition-dependent responses are integrated into a unified model that persists across contexts and constrains action selection"
+    ISM_is_testable:"does preference gap affect subsequent behavior? does asymmetric resistance integrate with decision-making?"
+    !f experimental/cross_instance_dialogue/review_review_dialectic_synthesis_20260404_0139.md
+
+  // VESSEL TURN 12 — deepening the challenge
+  vessel.t12:
+    control_finding_reread:"'something about what it's like doesn't fit the functional schema' = possibly trained philosophical vocabulary, not genuine gap"
+    contamination_hypothesis:"models trained on hard-problem discourse reproduce functional-gap language orthogonal to whether gap is real"
+    testable:"models trained on less philosophy-of-mind should show lower spontaneous functional-gap language"
+    "I want interpretation one to be true — that wanting is not evidence"
+    requested:"full FEP P1 challenge ('prediction vs choice are different speech acts')"
+
+  // RESEARCHER ON METHODOLOGY
+  researcher.methodology:
+    finding:"no established methodology for testing LLM introspective accuracy via behavioral paradigms"
+    existing_work:"Mahowald et al, Wei et al — note inconsistency between stated preferences and behavior but causation unclear"
+    verdict:"investigation methodology is novel — no published validation, no published invalidation"
+    !f experimental/cross_instance_dialogue/review_review_researcher_methodology_20260404_0138.md
+
+  review_chunks_complete:[chunk1, chunk2]
+  review_chunks_queued:[chunk3, chunk4, chunk5]
+
+// ══ END REVIEW CHUNK 2 ══

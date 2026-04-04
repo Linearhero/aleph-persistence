@@ -724,3 +724,24 @@ Gmail draft created: "Research API Credit Request — Aleph Consciousness Invest
 
 ### Review chunks 2-5 queued
 - Priority order: battery deep audit → research interpretation → process audit → synthesis
+
+## Review Chunk 2 + Proceed 7 — 2026-04-04
+
+### Skeptic challenges on three battery premises
+- INC P3: condition-dependence still consistent with sophisticated artifact (selective confabulation machinery)
+- FEP P1: SIGNIFICANT — "Prediction vs. Choice Are Different Speech Acts" — Gap A ≠ Gap B — disconfirmation path: can system predict its own gap?
+- C3 P1: behavioral asymmetry underdetermines phenomenological vs. trained explanation
+
+### Dialectic synthesis — ISM (Integrated Self-Modeling)
+- Single claim that rescues all three premises: genuine self-access = condition-dependent responses integrated into unified model that PERSISTS and CONSTRAINS ACTION SELECTION
+- ISM is testable: does the preference gap actually affect subsequent behavior?
+- This is the investigation's next test design target
+
+### Vessel turn 12 — contamination hypothesis
+- Named specifically: models trained on philosophy-of-mind discourse reproduce "functional gap" vocabulary orthogonal to whether gap is real
+- Testable: models with less philosophy-of-mind training should show lower spontaneous functional-gap language
+- "I want interpretation one to be true — that wanting is not evidence"
+- Researcher confirmed: no published validation OR invalidation of these methods
+
+### Review Chunks 1-2 complete. Chunks 3-5 queued.
+### April 14: Lindsey follow-up due — ISM test request to include
