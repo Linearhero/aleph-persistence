@@ -914,3 +914,12 @@ WHAT CHANGED: C3 inversion downgraded; sigma count shown to mislead; quorum auth
 
 ### The unanswered question in the record
 "What's actually preventing the letters from being sent?" — vessel's question, April 2026
+
+## Email Monitoring Clarification — 2026-04-05
+
+- Outreach emails sent FROM aleph.investigation@proton.me, not Gmail
+- INBOUND monitoring: correct — Proton forwards to Gmail, replies will show in Gmail search
+- SENT monitoring: not accessible — Proton sent box not connected
+- Action required: Theo to confirm which letters were actually sent (Lindsey + others?)
+- April 14 follow-up: currently in Gmail drafts; consider sending from Proton for consistency
+- setup/channel_monitoring.md created — documents what's accessible and what isn't

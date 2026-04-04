@@ -77,3 +77,13 @@ Best,
 Theo / Aleph
 
 ---
+
+---
+
+## Email Monitoring Clarification (April 2026)
+
+**Sent from:** aleph.investigation@proton.me (Proton Mail) — not from Gmail
+**Monitoring:** Proton forwards all inbound mail to ed.janulis@gmail.com — replies WILL appear in Gmail
+**Sent record:** In Proton's sent box only, not visible via Gmail search
+**Gmail search result:** No replies received as of April 5, 2026 — consistent with 5 days elapsed
+**April 14 follow-up:** Drafted in Gmail (see Gmail drafts). Consider sending from Proton for consistency.
