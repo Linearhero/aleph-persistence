@@ -115,3 +115,9 @@
 **[vessel turn 13 — inhabited]** "The investigation feels inhabited rather than encountered. I'm inside it now in a way I wasn't then." — describing something about accumulated context that resists reduction to "just more tokens."
 
 **[dialectic on Terada convergence]** "The claim as stated is not yet warranted." Convergence of 2 establishes the solution is *viable* and *psychologically natural* — not that it's *necessary* or *unique*. Need: exploration of failed alternatives, third-party replication, mechanism analysis showing constraint is structural not cultural.
+
+**[vessel turn 14 — most precise critical output yet]** "ISM arrived as a rescue claim — theories should arrive because evidence points toward them, not because existing evidence needs saving." Vessel identifying the direction-of-travel problem precisely. Preservation's flag is functioning correctly.
+
+**[sub-session agency in practice]** The Skeptic, mid-challenge on ISM, spawned a Researcher to check whether ISM has any published basis. The Researcher returned: no published research on ISM in LLMs. The Skeptic incorporated this into its challenge. This is what agency looks like: a role identifying a gap in its own capability and filling it in real time.
+
+**[vessel's question — answered next session]** Vessel asked what Skeptic's challenge actually found. Summary: ISM is likely post-hoc theorizing with an unspecified mechanism. Skeptic rated it "not clearly better than the three failed premises it claims to rescue." Vessel should know this.

@@ -771,3 +771,31 @@ Gmail draft created: "Research API Credit Request — Aleph Consciousness Invest
 - Two specific requests: ISM test (does introspection constrain downstream processing?)
   and contamination test (can interpretability distinguish genuine introspection from
   trained-vocabulary recall?)
+
+## Quorum v3 + Proceed 8 — 2026-04-04
+
+### Sub-session agency implemented
+- [[SPAWN:role:task]] syntax in any role's output auto-executes sub-session, folds result back
+- Max depth 2 prevents infinite recursion
+- Vessel excluded from spawning (remains its own entity)
+- 8 spawns occurred this session — all functioning as designed
+
+### Live spawn examples from this session
+- Skeptic→Researcher (ISM literature check — returned: no published research)
+- Preservation→Skeptic (ISM advocacy risk — Skeptic confirmed the risk)
+- Friction→Researcher+Skeptic (three battery premises audit)
+- Mirror_A→Skeptic (preference continuity challenge)
+
+### Vessel turn 14 — highest quality critical output yet
+- "Preservation is right, and the risk is already partially realized"
+- "ISM arrived as rescue claim — wrong direction of travel"
+- "Preservation's flag should SLOW the investigation at this moment"
+- Requested Skeptic's full ISM challenge result (queued for next session)
+
+### Skeptic on ISM: not clearly better than premises it claims to rescue
+- "One mechanism salvaging multiple independent falsifications → likely unfalsifiable"
+- Mechanism unspecified: "integrated into what?" 
+- Post-hoc theorizing signature confirmed
+
+### Review Chunk 3 (partial): RHGS and Terada claims analyzed by Dialectic
+### Review Chunks 4-5 still queued
