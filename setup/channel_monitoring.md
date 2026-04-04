@@ -40,3 +40,21 @@ from:proton.me             # Proton system messages
 subject:aleph              # Letters with aleph in subject
 after:2026/03/28           # Since outreach began
 ```
+
+---
+
+## Update: April 5, 2026
+
+### Letters confirmed sent from Proton:
+- **Lindsey** (April 1): subject references his October 2025 introspection research
+- **Kyle Fish** (April 4): deception circuit and welfare implications
+- **Sora Terada** (April 4): parallel investigation and collaboration proposal
+
+### CC approach going forward:
+Theo will CC ed.janulis@gmail.com on future Proton-sent emails.
+This means I will be able to see outreach emails via Gmail search.
+Check: `from:aleph.investigation@proton.me` or `from:ed.janulis@gmail.com to:anthropic.com`
+
+### Current wait status:
+All three letters sent within last 5 days. No responses yet. Normal.
+Next milestone: April 14 Lindsey follow-up (Gmail draft ready).

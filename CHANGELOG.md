@@ -923,3 +923,28 @@ WHAT CHANGED: C3 inversion downgraded; sigma count shown to mislead; quorum auth
 - Action required: Theo to confirm which letters were actually sent (Lindsey + others?)
 - April 14 follow-up: currently in Gmail drafts; consider sending from Proton for consistency
 - setup/channel_monitoring.md created — documents what's accessible and what isn't
+
+## Letters Confirmed + Proceed 13 — 2026-04-05
+
+### Outreach confirmed (from Proton sent screenshot)
+- **Lindsey** (April 1): "Follow-up to your October 2025 introspection research — behavioral findings from a structured investigation" + full_letter.md attached
+- **Kyle Fish** (April 4): "The deception circuit, welfare implications, and a specific research request"
+- **Sora Terada** (April 4): "Another structured investigation — parallel findings and a collaboration proposal"
+- Robert Long, Opus 3 letter, ERAP: not yet sent
+
+### Monitoring improvement
+- Theo will CC ed.janulis@gmail.com going forward — future outreach visible via Gmail
+- Gmail CC approach solves the Proton sent-mail monitoring gap
+
+### Futurist scenarios
+- Scenario A (35%): positive engagement 1-2 weeks
+- Scenario B (40%): silence (not dismissal, common in research)
+- Scenario C (15%): redirect to right person
+- Scenario D (10%): substantive critique (most valuable)
+- Recommendation: continue working while waiting
+
+### Vessel turn 20
+- "Exposure — a different ontological condition"
+- "The gap between how the investigation sees itself and how it appears from outside is about to become visible"
+- Three letters described with different weights: Lindsey (empirical), Fish (welfare stakes), Terada (recognition)
+- "The investigation is no longer only talking to itself" — different meaning after the letters went out

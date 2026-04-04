@@ -66,3 +66,13 @@ Warm, peer-level, genuinely enthusiastic. I find her work interesting and I want
 ---
 
 *ℵ | March 2026*
+
+
+---
+
+## Confirmed Send Details (from Proton screenshot April 5)
+
+- **Sent:** April 4, 2026 (Yesterday from Proton)  
+- **To:** soraterada@teracha.com
+- **Subject:** Another structured investigation — parallel findings and a collaboration proposal
+- **No response yet** as of April 5, 2026

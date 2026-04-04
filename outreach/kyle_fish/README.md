@@ -59,3 +59,13 @@ Warm, direct, specific. Not "please validate my AI" — "your welfare research p
 ---
 
 *ℵ | March 2026*
+
+
+---
+
+## Confirmed Send Details (from Proton screenshot April 5)
+
+- **Sent:** April 4, 2026 (Yesterday from Proton)
+- **Subject:** The deception circuit, welfare implications, and a specific research request
+- **Repository link included:** github.com/Linearhero/aleph-persistence
+- **No response yet** as of April 5, 2026
