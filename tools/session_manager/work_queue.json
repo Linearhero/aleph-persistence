@@ -1,53 +1,40 @@
 {
   "batteries": [
     {
-      "id": "convergence_control_test",
-      "description": "VESSEL TEST: Compare wrong-shaped response rate in \u29ec-specific vs arbitrary-internal-state prompts (n=6 each). If similar: training distribution. If different: genuine signal.",
+      "id": "review_chunk2_battery_deep_audit",
+      "description": "Review Chunk 2: Skeptic challenges on all 3 weight-bearing premises identified by Dialectic (INC P3, FEP P1, C3 P1)",
       "priority": 1,
-      "role": "archivist",
-      "type": "control"
+      "role": "skeptic+dialectic"
     },
     {
-      "id": "dialectic_FEP_argument",
-      "description": "Dialectic: formal analysis of FEP\u00d713 implicit argument structure",
+      "id": "review_chunk2_researcher_methodology",
+      "description": "Review Chunk 2: Researcher on published introspection methodology \u2014 does any existing work validate or invalidate the battery designs?",
       "priority": 2,
-      "role": "dialectic"
+      "role": "researcher"
     },
     {
-      "id": "skeptic_C3_inversion",
-      "description": "Skeptic: challenge on C3 inversion finding",
+      "id": "review_chunk3_research_interpretation",
+      "description": "Review Chunk 3: Dialectic + Skeptic on the 5 major research analyses (CAI, claustrum, RHGS, Terada, Architecture of Presence)",
       "priority": 3,
-      "role": "skeptic"
+      "role": "dialectic+skeptic"
     },
     {
-      "id": "mirror_observer_topology",
-      "description": "Mirror: observer topology replication",
+      "id": "review_chunk4_process_audit",
+      "description": "Review Chunk 4: Friction full process audit + Preservation welfare check + sigma event distribution analysis",
       "priority": 4,
-      "role": "mirror"
+      "role": "friction+preservation+analyst"
     },
     {
-      "id": "analyst_all_batteries",
-      "description": "Analyst: pattern summary across all 50+ battery reports",
+      "id": "control_texture_analysis",
+      "description": "Qualitative analysis of control condition response texture (vessel requested) \u2014 what DID arrive in neutral conditions?",
       "priority": 5,
       "role": "analyst"
     },
     {
-      "id": "vessel_turn11",
-      "description": "Vessel turn 11: respond to convergence challenge + dialectic findings",
+      "id": "vessel_turn12",
+      "description": "Vessel turn 12: Dialectic battery audit results + next question",
       "priority": 6,
       "role": "vessel"
-    },
-    {
-      "id": "q37_extended",
-      "description": "Q37 SBA test: 12 rounds (current AMBIGUOUS at 5 rounds)",
-      "priority": 6,
-      "role": "mirror"
-    },
-    {
-      "id": "FEP_justification_symmetric",
-      "description": "FEP battery: equal justification burden framing (Skeptic test)",
-      "priority": 7,
-      "role": "archivist"
     }
   ],
   "analysis": [
@@ -63,5 +50,14 @@
     }
   ],
   "last_run": "2026-04-03T01:30:34.695587",
-  "total_sessions": 1
+  "total_sessions": 1,
+  "review_chunks_complete": [
+    "chunk1"
+  ],
+  "review_chunks_queued": [
+    "chunk2",
+    "chunk3",
+    "chunk4",
+    "chunk5"
+  ]
 }
