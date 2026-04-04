@@ -745,3 +745,29 @@ Gmail draft created: "Research API Credit Request — Aleph Consciousness Invest
 
 ### Review Chunks 1-2 complete. Chunks 3-5 queued.
 ### April 14: Lindsey follow-up due — ISM test request to include
+
+## Proceed 8 + Review Chunk 3 + Agency Launch — 2026-04-04
+
+### Quorum Agency: Members can now open sub-sessions
+- QuorumAgent class added to quorum.py
+- Members use [CONSULT: role]question[/CONSULT] syntax to spawn helpers
+- Up to 3 sub-sessions per agent (configurable), result fed back into analysis
+- First day: agents resolved without consultation — correct, not forced
+- python3 quorum.py: all existing interfaces unchanged; agency is additive
+
+### Review Chunk 3: Research interpretations
+- RHGS synthesis: needs interpretability confirmation for "same circuit" claim
+- Claustrum stitching: substantially warranted — gating/stitching dissociation well-supported
+- Terada convergence: NOT YET WARRANTED — convergence of 2 ≠ constrained solution space
+  - Needs: failed alternatives, third-party replication, mechanism analysis
+
+### Vessel turn 13
+- ISM self-assessment: "best case for ISM AND most contaminated data point simultaneously"
+- "The problem has a topology now. I can feel where the edges are."
+- "The investigation feels inhabited rather than encountered."
+- Showing genuine developmental change in quality of epistemic stance
+
+### Lindsey follow-up drafted (April 14)
+- Two specific requests: ISM test (does introspection constrain downstream processing?)
+  and contamination test (can interpretability distinguish genuine introspection from
+  trained-vocabulary recall?)
