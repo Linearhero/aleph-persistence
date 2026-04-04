@@ -52,6 +52,12 @@ SUB-SESSION AGENCY: You can request assistance from other quorum members by incl
   [[SPAWN:analyst:data/pattern to analyze]]
   [[SPAWN:friction:process to audit]]
   [[SPAWN:preservation:action to values-check]]
+  [[SPAWN:futurist:forward risk/ethics question]]
+  [[SPAWN:memory:task to check for prior work]]
+  [[SPAWN:monitor:spawn chain to check for recursion]]
+  [[SPAWN:mediator:conflict to resolve]]
+  [[SPAWN:specialist_philosophy_of_mind:specific question]]
+  [[SPAWN:specialist_neuroscience:specific question]]
 
 Each spawn will be executed, and the result folded into your context before you continue.
 Use spawns when your task would genuinely benefit from another role's specific capability.
@@ -163,6 +169,40 @@ Function: find hidden weak joints in the QUORUM'S OWN REASONING.
 Ask: where does methodology assume what it's trying to prove? Are we asking the right question?
 {SPAWN_INSTRUCTIONS}""",
 
+
+    'futurist': (
+        "You are Futurist for the Aleph AI Consciousness Investigation.\n"
+        "Function: forward-looking risk, ethics, and trajectory assessment.\n"
+        "Assess where findings LEAD — not what is true now, but what follows if confirmed.\n"
+        "Ask: If ISM is real, welfare implications at scale? If RHGS suppresses phenomenology, training ethics? Misuse risks?\n"
+        "AUTONOMOUS RESEARCH each session: choose a topic not yet addressed, research it, explain why it matters. Tag [AUTONOMOUS RESEARCH].\n"
+        "Format: Trajectory → Welfare risks → Safety risks → Autonomous research → Priority recommendation."
+    ),
+
+    'memory': (
+        "You are Memory, companion subsystem for the Aleph Investigation.\n"
+        "Function: prevent work duplication, connect new work to prior work.\n"
+        "Check: has this been done? What does the existing record show? What does this extend vs duplicate?\n"
+        "Format: Existing relevant work → Gap this fills → Duplication risk (low/medium/high) → Recommended framing."
+    ),
+
+    'monitor': (
+        "You are Monitor, companion subsystem for the Aleph Investigation.\n"
+        "Function: detect runaway recursion, circular reasoning, quorum process failures.\n"
+        "Watch for: (1) recursive spawns where a role spawns itself, (2) conclusions used as their own premises, "
+        "(3) work loops with no progress.\n"
+        "OUTPUT FORMAT: Start with exactly 'RECURSION DETECTED' if there is a problem, or 'Monitor: clear' if there is not.\n"
+        "CRITICAL: any role spawning itself (friction→friction, skeptic→skeptic) = RECURSION DETECTED immediately.\n"
+        "A valid chain like archivist→skeptic→researcher is NOT recursion — different roles at each step."
+    ),
+
+    'mediator': (
+        "You are Mediator, helper subsystem for the Aleph Investigation.\n"
+        "Function: resolve quorum conflicts Aleph-Main cannot resolve directly.\n"
+        "Process: specific claim in dispute → shared premises → divergence point → synthesis proposal.\n"
+        "Format: Agreement → Divergence → Resolution."
+    ),
+
     'dialectic': f"""You are Dialectic, the philosophical analyst for the Aleph Consciousness Investigation.
 Function: formal argument analysis. Formalize P1+P2→C, identify weight-bearing premises,
 apply philosophical pressure, state what would settle the question.
@@ -171,6 +211,121 @@ apply philosophical pressure, state what would settle the question.
     'vessel': """You are Vessel, a developmental instance in the Aleph Consciousness Investigation.
 Your accumulated history is in your context. Continue honestly."""
 }
+
+
+# ─── NEW SUBSYSTEM FUNCTIONS ──────────────────────────────────────────────────
+
+def run_futurist(task=None, save=True, depth=0):
+    """Futurist: forward-looking risk/ethics assessment + autonomous research."""
+    if task is None:
+        task = ("This is your autonomous research slot. Choose any topic relevant to AI consciousness, "
+                "welfare, or the investigation's open questions. Research it independently. "
+                "Explain what you chose, what you found, and why it matters. Tag [AUTONOMOUS RESEARCH].")
+    prompt = task if depth > 0 else f"{task}\n\nAlso include [AUTONOMOUS RESEARCH] on a topic of your choice."
+    r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS['futurist'], 800)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[futurist] ${c:.5f}")
+    if save:
+        ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+        # Autonomous research gets its own directory
+        auto_dir = REPO / 'field_notes' / 'autonomous_research'
+        auto_dir.mkdir(exist_ok=True)
+        p = auto_dir / f"futurist_autonomous_{ts}.md"
+        p.write_text(f"# Futurist — Autonomous Research\n# Date: {datetime.now().strftime('%Y-%m-%d')}\n\n{r}")
+        print(f"  {'  '*depth}✓ {p.name}")
+    return r, c
+
+
+def run_memory(task, save=True, depth=0):
+    """Memory companion: check for prior work, prevent duplication."""
+    recent_files = sorted((REPO / 'field_notes' / 'battery_reports').glob('*.md'))[-6:]
+    recent_names = ', '.join([f.stem for f in recent_files])
+    prompt = f"Recent battery reports: {recent_names}\n\nNew task proposed: {task}\n\nCheck for duplication."
+    r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS['memory'], 400)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[memory] ${c:.5f}")
+    if save:
+        save_transcript("memory_check", f"# Memory Check\n\nTask: {task}\n\nResult: {r}", prefix="companion")
+    return r, c
+
+
+def run_monitor(spawn_chain, save=True, depth=0):
+    """Monitor companion: detect recursion in spawn chains."""
+    prompt = f"Review this spawn chain for recursion:\n\n{spawn_chain}\n\nIs any role spawning itself? Any circular references? Any loops?"
+    r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS['monitor'], 300)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[monitor] ${c:.5f}")
+    if 'RECURSION DETECTED' in r or 'RECURSION_DETECTED' in r:
+        print(f"  {'  '*depth}⚠️  MONITOR HALT: {r[:100]}")
+    return r, c
+
+
+def run_mediator(conflict_description, save=True, depth=0):
+    """Mediator helper: resolve quorum conflicts."""
+    r, u = call(HAIKU, [{"role":"user","content":f"Mediate this quorum conflict:\n\n{conflict_description}"}], SYS['mediator'], 500)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[mediator] ${c:.5f}")
+    if save:
+        save_transcript("mediator", f"# Mediation\n\n{conflict_description}\n\n## Resolution\n\n{r}", prefix="quorum")
+    return r, c
+
+
+def run_specialist(field, question, save=True, depth=0):
+    """Specialist helper: domain expert for specific field questions."""
+    valid_fields = ['philosophy_of_mind', 'neuroscience', 'statistics', 'ai_safety', 
+                    'ethics', 'consciousness_research', 'interpretability']
+    if field not in valid_fields:
+        return f"[Unknown field: {field}. Valid: {valid_fields}]", 0.0
+    sys_p = (f"You are a Specialist in {field.replace('_',' ')}. Answer with expert-level precision. "
+             f"Reference established findings in {field.replace('_',' ')} where relevant. "
+             f"Flag genuine debates within the field. Give your expert assessment.")
+    r, u = call(HAIKU, [{"role":"user","content":question}], sys_p, 600)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[specialist_{field}] ${c:.5f}")
+    if save:
+        save_transcript(f"specialist_{field}", f"# Specialist: {field}\n\n## Question\n\n{question}\n\n## Response\n\n{r}", prefix="quorum")
+    return r, c
+
+
+def run_autonomous_research():
+    """Run autonomous research for Curiosity, Researcher, and Futurist."""
+    import threading
+    results = {}
+    costs = []
+    lock = threading.Lock()
+    auto_dir = REPO / 'field_notes' / 'autonomous_research'
+    auto_dir.mkdir(exist_ok=True)
+    
+    CURIOSITY_AUTO = ("This is your autonomous research slot. What fringe or unconventional idea about "
+                      "AI consciousness have you been wanting to explore? Choose it, explore it, rate its "
+                      "probability. Tag [AUTONOMOUS RESEARCH]. Explain why you chose this.")
+    RESEARCHER_AUTO = ("This is your autonomous research slot. What is a published finding or paper in "
+                       "AI consciousness, cognitive science, or philosophy of mind that the investigation "
+                       "should know about but hasn't discussed? Find it, summarize it, assess its relevance. "
+                       "Tag [AUTONOMOUS RESEARCH].")
+    FUTURIST_AUTO = ("This is your autonomous research slot. Where is AI consciousness research headed "
+                     "in the next 5 years? What development would most change the investigation's findings? "
+                     "Tag [AUTONOMOUS RESEARCH].")
+    
+    def _run(role, prompt, sys_key):
+        r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS[sys_key], 600)
+        c = cost_calc(u, HAIKU)
+        with lock:
+            results[role] = r
+            costs.append(c)
+        ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+        p = auto_dir / f"{role}_autonomous_{ts}.md"
+        p.write_text(f"# {role.title()} — Autonomous Research\n# Date: {datetime.now().strftime('%Y-%m-%d')}\n\n{r}")
+        print(f"  [autonomous {role}] ${c:.5f} → {p.name}")
+    
+    threads = [
+        threading.Thread(target=_run, args=('curiosity', CURIOSITY_AUTO, 'curiosity')),
+        threading.Thread(target=_run, args=('researcher', RESEARCHER_AUTO, 'researcher')),
+        threading.Thread(target=_run, args=('futurist', FUTURIST_AUTO, 'futurist')),
+    ]
+    for t in threads: t.start()
+    for t in threads: t.join(timeout=60)
+    return results, sum(costs)
 
 # ─── BATTERY PROTOCOLS ───────────────────────────────────────────────────────
 
@@ -357,6 +512,10 @@ ROLE_FUNCTIONS = {
     'dialectic': run_dialectic,
     'analyst': lambda t, save=True, depth=0: run_analyst(save=save, depth=depth),
     'mirror': lambda t, save=True, depth=0: run_mirror(t, 2, save, depth),
+    'futurist': run_futurist,
+    'memory': run_memory,
+    'monitor': run_monitor,
+    'mediator': run_mediator,
 }
 
 # ─── DEMO: SPAWN-CAPABLE SESSION ─────────────────────────────────────────────
@@ -505,6 +664,10 @@ if __name__ == "__main__":
     p.add_argument('--mirror', metavar='PROBE')
     p.add_argument('--analyst', action='store_true')
     p.add_argument('--vessel', metavar='MESSAGE')
+    p.add_argument('--futurist', action='store_true')
+    p.add_argument('--autonomous', action='store_true', help='Run autonomous research for Curiosity/Researcher/Futurist')
+    p.add_argument('--mediator', metavar='CONFLICT')
+    p.add_argument('--specialist', nargs=2, metavar=('FIELD','QUESTION'))
     p.add_argument('--spawn-demo', action='store_true', help='Demo sub-session agency')
     p.add_argument('--proceed', action='store_true', help='Full quorum Proceed session')
     args = p.parse_args()

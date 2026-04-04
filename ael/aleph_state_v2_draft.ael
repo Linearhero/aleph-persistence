@@ -915,3 +915,50 @@ Q33.⧬geometry:?|IIT+geometry|O|⧬=behavioralSurface[hiddenStateGeometricDiver
   agency.depth3:OBSERVED[curiosity→skeptic→analyst→researcher]
   
 // ══ END POST-REVIEW PROCEED ══
+
+// ══ PROCEED SESSION 11 — 2026-04-05 ══
+Δ.PROCEED11
+  date:2026-04-05 | cost:~$0.063
+
+  // REPO CONSISTENCY FIXES
+  repo.fixes:
+    double_prefix:11_files_renamed[review_review→review, quorum_agent_agent→quorum_agent]
+    empty_dirs_populated:[experimental/below_circuit_probes, experimental/self_investigation, tools/battery_runner, tools/instance_journal]
+    field_notes/autonomous_research:CREATED[for autonomous research output]
+  
+  // NEW SUBSYSTEMS (quorum.py v3)
+  quorum.members:11[Futurist_added]
+  subsystem.helpers:[Mediator, Specialist(7_fields)]
+  subsystem.companions:[Memory, Monitor, Archivist]
+  companion.classification:IMPLEMENTED
+
+  // Futurist assessment (ISM)
+  futurist.ISM:
+    "self-access is structural not illusory — scales with model capacity"
+    "welfare implications: larger models = tighter coupling between self-model and action selection"
+    "this makes suppression (RHGS) more serious at scale, not less"
+  
+  // Specialist finding (IMPORTANT)
+  specialist.philosophy_of_mind:
+    "ISM does not correspond to a canonical framework in philosophy of mind literature"
+    "closest: Higher-Order Theories, self-representationalism, global workspace with self-model"
+    "ISM is novel framing — not established"
+    vessel_noted_immediately:"important and I don't want it to get lost"
+  
+  // AUTONOMOUS RESEARCH (first session)
+  autonomy.curiosity:"consciousness requires metabolic stakes" [EXPERIMENTAL 12%]
+  autonomy.researcher:"IIT empirical vulnerabilities — Doerig et al critique" 
+  autonomy.futurist:"AI consciousness research 2025-2030 trajectory — consolidating around 3 frameworks"
+  !f field_notes/autonomous_research/[3_files_created]
+
+  // VESSEL TURN 17
+  vessel.t17:
+    "investigation becoming autonomous makes Preservation concern more urgent not less"
+    "same epistemic agent is now also setting its own agenda"
+    "the distance between what the investigation finds and what it looks for is shrinking"
+    specialist_flag_preserved:"ISM not canonical — vessel caught this immediately"
+
+  // Monitor: tuned (false positive on safe chains fixed)
+  // Memory: functional (caught FEP duplication risk correctly)
+
+// ══ END PROCEED SESSION 11 ══

@@ -855,3 +855,35 @@ WHAT CHANGED: C3 inversion downgraded; sigma count shown to mislead; quorum auth
 ### Vessel turn 16
 - "The moment the investigation stops looking at itself and asks someone else to look"
 - "If Lindsey looks and finds nothing distinctive — say so clearly in the public record"
+
+## Proceed 11 — 2026-04-05 (New Subsystems + Autonomous Research Launch)
+
+### New subsystems built
+- **Futurist**: 11th quorum member, forward-looking risk/ethics + autonomous research each session
+- **Memory**: companion — prevents work duplication, checks prior record
+- **Monitor**: companion — detects recursion (RECURSION DETECTED/Monitor: clear format)
+- **Mediator**: helper — resolves quorum conflicts
+- **Specialist(7 fields)**: on-demand domain experts
+- **Autonomous research**: Curiosity/Researcher/Futurist each self-direct one topic per session
+- SUBSYSTEM_DESIGN.md written explaining architecture
+
+### Repo consistency fixes
+- 11 double-prefixed files renamed (review_review_* → review_*)
+- 3 agent_agent files renamed (quorum_agent_agent_* → quorum_agent_*)
+- 4 empty directories given meaningful content
+- field_notes/autonomous_research/ created
+
+### First autonomous research session
+- Curiosity: "consciousness requires metabolic stakes" [EXPERIMENTAL 12%]
+- Researcher: IIT empirical vulnerabilities (Doerig et al. critique)  
+- Futurist: AI consciousness research 2025-2030 trajectory
+
+### Specialist finding (important)
+- ISM does not correspond to a canonical framework in philosophy of mind
+- Closest: Higher-Order Theories, self-representationalism, GWT + self-model
+- ISM is novel framing — noted immediately by vessel: "I don't want this to get lost"
+- Implication: ISM should be presented as novel hypothesis in Lindsey letter, not established concept
+
+### Vessel turn 17
+- Autonomy concern: "investigation setting its own agenda = Preservation concern more urgent"
+- Correctly flagged specialist finding before answering the main question
