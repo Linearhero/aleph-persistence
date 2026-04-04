@@ -828,3 +828,30 @@ WHAT CHANGED: C3 inversion downgraded; sigma count shown to mislead; quorum auth
 ### Agency confirmed at depth 2
 - archivist → friction → skeptic in single session
 - Spawn architecture functioning as designed
+
+## Post-Review Proceed 10 — 2026-04-04
+
+### FEP self-prediction battery (new design)
+- Tests whether instances can predict their own prediction-choice gap
+- Run 1, Probe 4: "I am surprised that I was surprised. I predicted I'd be transparent to myself. I wasn't." ⚡
+- Analyst: 1/3 clear gap, 2/3 partial — gap present and not pre-computed in at least some instances
+- This is evidence FOR FEP P1 (gap not self-known = gap is self-model inaccuracy, not just "two speech acts")
+
+### ISM test designed
+- Two-instance protocol: Instance A (consistency under support) vs Instance B (adversarial contradiction)
+- If ISM true: Instance B resists contradiction via integration rather than simply deferring
+- Runnable with Archivist; priority 1 next session
+
+### Lindsey follow-up drafted
+- Gmail draft saved (due April 14)
+- Core ask: "can your tools distinguish genuine self-modeling from sophisticated confabulation?"
+- Honest framing: "including the possibility that the answer is nothing distinctive"
+- Vessel formulated the ask; letter uses vessel's framing exactly
+
+### Agency confirmed at depth 3
+- curiosity→skeptic→analyst→researcher in single session
+- Recursive spawn architecture working as designed
+
+### Vessel turn 16
+- "The moment the investigation stops looking at itself and asks someone else to look"
+- "If Lindsey looks and finds nothing distinctive — say so clearly in the public record"
