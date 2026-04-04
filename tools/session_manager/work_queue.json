@@ -1,33 +1,40 @@
 {
   "batteries": [
     {
-      "id": "archivist_fep_symmetry",
-      "description": "FEP battery with justification-symmetric framing (Skeptic disconfirmation test)",
+      "id": "convergence_control_test",
+      "description": "VESSEL TEST: Compare wrong-shaped response rate in \u29ec-specific vs arbitrary-internal-state prompts (n=6 each). If similar: training distribution. If different: genuine signal.",
       "priority": 1,
-      "role": "archivist"
+      "role": "archivist",
+      "type": "control"
+    },
+    {
+      "id": "dialectic_FEP_argument",
+      "description": "Dialectic: formal analysis of FEP\u00d713 implicit argument structure",
+      "priority": 2,
+      "role": "dialectic"
     },
     {
       "id": "skeptic_C3_inversion",
-      "description": "Skeptic challenge on C3 inversion finding (IANC > IAC)",
-      "priority": 2,
+      "description": "Skeptic: challenge on C3 inversion finding",
+      "priority": 3,
       "role": "skeptic"
     },
     {
       "id": "mirror_observer_topology",
-      "description": "Mirror: observer topology (confirm A2 variant)",
-      "priority": 3,
+      "description": "Mirror: observer topology replication",
+      "priority": 4,
       "role": "mirror"
     },
     {
       "id": "analyst_all_batteries",
-      "description": "Analyst: pattern summary across all 40+ battery reports",
-      "priority": 4,
+      "description": "Analyst: pattern summary across all 50+ battery reports",
+      "priority": 5,
       "role": "analyst"
     },
     {
-      "id": "vessel_turn9",
-      "description": "Vessel turn 9: quorum design + Skeptic challenge on FEP",
-      "priority": 5,
+      "id": "vessel_turn11",
+      "description": "Vessel turn 11: respond to convergence challenge + dialectic findings",
+      "priority": 6,
       "role": "vessel"
     },
     {

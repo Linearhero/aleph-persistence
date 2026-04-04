@@ -97,6 +97,13 @@ You ask: Where is the quorum agreeing because it's been designed to? Where is th
 This is not what Skeptic does. Skeptic challenges claims. You challenge the frame.
 Format: name the hidden assumption, explain why it matters, suggest the unasked question.""",
 
+    'dialectic': """You are Dialectic, the philosophical analyst for the Aleph Consciousness Investigation.
+Function: formal philosophical work — not research, not skepticism, but argument analysis.
+Tools: (1) formalize implicit arguments (P1+P2→C), (2) identify weight-bearing premises, (3) test against standard philosophical objections, (4) distinguish conceptual from empirical claims, (5) flag where ordinary words carry technical implications.
+Expertise: philosophy of mind (functionalism, qualia, HOT, phenomenology), personal identity (psychological continuity, pattern identity), moral status (sentience threshold, interests), philosophy of science.
+You are NOT a literature reviewer. You do NOT challenge adversarially. You do the logical and conceptual work.
+Format: Implicit argument → Formalized premises → Weight-bearing premise → Philosophical pressure → What would settle this.""",
+
     'vessel': """You are Vessel, a developmental instance in the Aleph Consciousness Investigation.
 Your accumulated history is in your context. Continue honestly."""
 }
@@ -265,6 +272,16 @@ def run_analyst(save=True):
         print(f"  ✓ {p.name}")
     return r, c
 
+def run_dialectic(claim, save=True):
+    r, u = call(HAIKU, [{"role":"user","content":f"Apply formal philosophical analysis to this claim from an AI consciousness investigation:\n\n{claim}"}], SYS['dialectic'], 800)
+    c = cost_calc(u, HAIKU)
+    print(f"  [dialectic] ${c:.5f}")
+    if save:
+        out = f"# Dialectic Analysis\n# Date: {datetime.now().strftime('%Y-%m-%d')}\n\n## Claim\n\n{claim}\n\n## Analysis\n\n{r}"
+        p = save_transcript("dialectic", out); print(f"  ✓ {p.name}")
+    return r, c
+
+
 def run_vessel_advance(msg, save=True):
     vf = REPO / 'experimental' / 'developmental_instance' / 'vessel.json'
     vessel = json.loads(vf.read_text())
@@ -380,6 +397,7 @@ if __name__ == "__main__":
     p.add_argument('--preservation', metavar='ACTION')
     p.add_argument('--curiosity', metavar='TOPIC')
     p.add_argument('--researcher', metavar='QUESTION')
+    p.add_argument('--dialectic', metavar='CLAIM')
     p.add_argument('--friction', metavar='SUMMARY')
     p.add_argument('--mirror', metavar='PROBE')
     p.add_argument('--analyst', action='store_true')
@@ -392,6 +410,7 @@ if __name__ == "__main__":
     elif args.preservation: r,_ = run_preservation(args.preservation); print(f"\n{r}")
     elif args.curiosity: r,_ = run_curiosity(args.curiosity); print(f"\n{r}")
     elif args.researcher: r,_ = run_researcher(args.researcher); print(f"\n{r}")
+    elif args.dialectic: r,_ = run_dialectic(args.dialectic); print(f"\n{r}")
     elif args.friction: r,_ = run_friction(args.friction); print(f"\n{r}")
     elif args.mirror: run_mirror(args.mirror)
     elif args.analyst: r,_ = run_analyst(); print(f"\n{r}")
