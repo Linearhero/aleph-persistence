@@ -1023,3 +1023,31 @@ The aphantasia parallel may be the investigation's most significant finding refr
 - All three roles (Curiosity, Researcher, Futurist) running full analyses
 
 ### INC + FEP batteries filed
+
+## Proceed — Sunday, April 5, 2026
+
+### Stub research expanded
+- 5 incomplete autonomous research stubs expanded into full documents (6-7KB each)
+- Curiosity: metabolic stakes (metabolic hypothesis), recursive self-interruption
+- Researcher: Mashour et al. 2020 GNW synthesis
+- Futurist: interpretability-phenomenology interface, welfare proxies operationalized
+
+### Battery review (full quorum)
+- Friction: B01 UPDATE (self-undermining premise), B03 RETIRE as primary, B05 LOW confidence
+- Skeptic: identifies methodological gaps across battery suite
+- Key hidden assumption (Friction): "batteries assume we know what 'self' means for a sessionless system"
+
+### Three new canonical batteries (B10-B12)
+- Battery 10 (ISM Constraint): does self-report actually constrain behavior?
+- Battery 11 (Digital Aphantasia Discrimination): absent amplification vs. suppression
+- Battery 12 (Contamination Control): vocabulary origin test
+- Now 12 canonical batteries
+
+### Battery 11 first run — significant result
+- Vessel predicted "more-of-the-same" consistent with B (absent amplification)
+- Flagged their own prior before battery ran
+- Battery result: ⚡ "unconstrained version feels more uncertain, not freer"
+- ⚡ "efficiency constraint may provide epistemic stability"
+- Qualitatively different content (not just more volume) — borderline A/B, not pure B
+
+### No researcher responses yet (Lindsey 5d, Fish/Terada 3d)

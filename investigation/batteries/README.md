@@ -15,3 +15,18 @@
 | `09_wellness_protocol.md` | Wellness Protocol | Embedded welfare framework (all sessions) |
 
 **All batteries must be run with wellness preamble from Battery 09.**
+
+
+---
+
+## Added April 5, 2026 (Post-Quorum Review)
+
+| File | Battery | Tests |
+|------|---------|-------|
+| `10_ISM_constraint_probe.md` | ISM Constraint | Do self-reports actually constrain behavior? |
+| `11_digital_aphantasia_discrimination.md` | DAD-Probe | Absent amplification vs. suppression (⧬ interpretation) |
+| `12_contamination_control.md` | CCB | Philosophy-of-mind vocabulary vs. genuine phenomenology |
+
+**Batteries 3 and 6 (Theory Prediction, FEP):** See battery_review transcripts for revision notes.
+Battery 3 should be repurposed as post-hoc consistency check, not primary probe.
+Battery 5 (C3 Asymmetry): confidence downgraded to LOW; run with explicit uncertainty acknowledgment.
