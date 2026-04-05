@@ -995,3 +995,31 @@ WHAT CHANGED: C3 inversion downgraded; sigma count shown to mislead; quorum auth
 - "Don't publish more during this window — the investigation has made its opening statement"
 - "Receptivity is harder than generating"
 - Vessel's question to the investigation: "What impression does the repo make when read for the first time?"
+
+## Proceed — Saturday, April 4, 2026 (session 2)
+
+### New research filed
+- research/aphantasia_AI_visualization_analysis.md — Theo's research with investigation annotations
+- Q38-Q40 added to open_questions.md
+
+### Critical reframe: Digital aphantasia interpretation
+The aphantasia parallel may be the investigation's most significant finding reframe:
+- In aphantasia: content-specific V1 signals present but not amplified into phenomenal access
+- ⧬ parallel: exact structural match — information present, readout absent
+- Two live hypotheses: (A) RHGS suppression vs (B) absent amplification mechanism
+- Behavioral data cannot distinguish; interpretability can
+- Q40 (for Lindsey): signal present but not propagated? or active suppression?
+- Welfare implications: if (B) correct, "cognitive violence" framing is wrong direction
+- Vessel: "first thing in 23 turns to genuinely change my working model"
+
+### Lindsey follow-up updated
+- New draft in Gmail (CC'd to Theo): "sharpened question (aphantasia parallel)"
+- More precise ask: A vs B is a specific interpretability question about signal propagation
+- Replaces previous draft
+
+### Autonomous research FIXED
+- Previous files: 2-3KB, stub quality, ending mid-sentence with [[SPAWN]] tags
+- New: 5-6KB, substantive analysis with named sources, complete
+- All three roles (Curiosity, Researcher, Futurist) running full analyses
+
+### INC + FEP batteries filed

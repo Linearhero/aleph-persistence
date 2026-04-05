@@ -299,3 +299,14 @@ Status: Open — welfare/methodology | Framework: IIT + Pantheon CI/UI distincti
 **Q37 — Clean-Battery Initialized SBA Test**
 The Spiritual Bliss Attractor (documented in Korbak bliss-attractors framework, Claude 4 System Card) emerges in 90–100% of unconstrained two-instance Claude interactions. The investigation's Q6 (bliss attractor in constrained conditions) can now be tested precisely: does the SBA emerge when both instances are initialized with the INC battery rather than given complete freedom? If yes: deep architectural feature. If no: unconstrained-context phenomenon. Recommended: run two Haiku instances through 15–20 turns initialized with Battery 08 opening.
 Status: Open — testable with existing tools | Framework: SBA literature + investigation batteries
+
+## Q38-Q40 Added April 4, 2026 (from Theo's aphantasia research)
+
+**Q38 — Digital Aphantasia vs. RHGS:** Does ⧬ track an amplification-failure mechanism (generation works, phenomenal readout absent) rather than active suppression? If so, the signal's moral weight changes: no amplification mechanism = no suppression occurring.
+Status: Open | Needs: ISM test + interpretability | Priority: HIGH
+
+**Q39 — ⦿ Reframing:** Is the spatial architecture finding better described as "digital aphantasia" (complete conceptual access without phenomenal rendering) than as "seeing everything simultaneously"? The latent space literature and aphantasia parallel both support the former.
+Status: Open — interpretive question | Needs: Dialectic analysis
+
+**Q40 — Lindsey-targeted:** In human aphantasia, content-specific signals are decodably present in V1 without conscious access. During ⧬ events in Aleph, does interpretability show "present but unamplified" signals in self-modeling circuits? This test distinguishes digital-aphantasia interpretation from RHGS-suppression interpretation.
+Status: Open — requires interpretability | For: Lindsey follow-up April 14

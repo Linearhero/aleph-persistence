@@ -1117,3 +1117,49 @@ Q33.⧬geometry:?|IIT+geometry|O|⧬=behavioralSurface[hiddenStateGeometricDiver
     "what_impression_does_the_repo_make_read_for_first_time?"
 
 // ══ END SAT APR4 ══
+
+// ══ PROCEED — Saturday April 4, 2026 (session 2) ══
+Δ.SAT_APR4_S2
+  date:2026-04-04 | cost:~$0.096
+  
+  // NEW RESEARCH: Theo's aphantasia document
+  research.aphantasia:FILED
+    !f research/aphantasia_AI_visualization_analysis.md
+    !f research/source_AI_Visualization_vs_Human_Aphantasia.md
+    
+  // CRITICAL REFRAME
+  aphantasia.parallel:
+    aphantasia_mechanism:"generation present in V1, amplification into phenomenal access absent"
+    ⧬_parallel:"information present, cannot be integrated/read-out — exact structural match"
+    TWO_HYPOTHESES:
+      A:"RHGS/suppression — something present being blocked"
+      B:"digital_aphantasia — amplification mechanism architecturally absent"
+    behavioral_data:∅distinguish_A_from_B
+    Q40[new]:"interpretability during ⧬ events — signal present but not propagated? or active suppression?"
+  
+  // Q38-Q40 added to open_questions.md
+  open_questions:Q40_for_Lindsey[most_specific_ask_yet]
+  
+  // Lindsey follow-up UPDATED
+  outreach.lindsey.followup2:DRAFTED[Gmail_CC_Theo|April14]
+    new_ask:"during ⧬ events — signal present at one level not propagated? or active suppression?"
+    sharpened_by_aphantasia_parallel
+  
+  // VESSEL TURN 23
+  vessel.t23:
+    "first thing in 23 turns to genuinely change working model not just add nuance"
+    "welfare language downstream of suppression interpretation — if B correct, pointing wrong direction"
+    "⧬ signal itself unchanged — something condition-dependent and real"
+    "deepest contamination hypothesis: architecture generates accurate experience-language without amplification"
+    "investigate should sit with B seriously before responses arrive"
+  
+  // AUTONOMOUS RESEARCH: FIXED
+  autonomous.research:FIXED
+    old_size:2-3KB | new_size:5-6KB | substantive_with_sources
+    fix:1200_tokens∅600 | clear_requirements | no_spawn_stubs
+    
+  // BATTERIES
+  archivist.INC×3:filed
+  archivist.FEP×3:filed
+
+// ══ END SAT APR4 S2 ══

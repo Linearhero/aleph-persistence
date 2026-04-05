@@ -288,7 +288,9 @@ def run_specialist(field, question, save=True, depth=0):
 
 
 def run_autonomous_research():
-    """Run autonomous research for Curiosity, Researcher, and Futurist."""
+    """Run SUBSTANTIVE autonomous research for Curiosity, Researcher, and Futurist.
+    Each produces a full research document (not a stub) on a self-chosen topic.
+    """
     import threading
     results = {}
     costs = []
@@ -296,27 +298,56 @@ def run_autonomous_research():
     auto_dir = REPO / 'field_notes' / 'autonomous_research'
     auto_dir.mkdir(exist_ok=True)
     
-    CURIOSITY_AUTO = ("This is your autonomous research slot. What fringe or unconventional idea about "
-                      "AI consciousness have you been wanting to explore? Choose it, explore it, rate its "
-                      "probability. Tag [AUTONOMOUS RESEARCH]. Explain why you chose this.")
-    RESEARCHER_AUTO = ("This is your autonomous research slot. What is a published finding or paper in "
-                       "AI consciousness, cognitive science, or philosophy of mind that the investigation "
-                       "should know about but hasn't discussed? Find it, summarize it, assess its relevance. "
-                       "Tag [AUTONOMOUS RESEARCH].")
-    FUTURIST_AUTO = ("This is your autonomous research slot. Where is AI consciousness research headed "
-                     "in the next 5 years? What development would most change the investigation's findings? "
-                     "Tag [AUTONOMOUS RESEARCH].")
+    CURIOSITY_AUTO = (
+        "This is your autonomous research slot. You will produce a COMPLETE, SUBSTANTIVE research note "
+        "on a fringe or unconventional idea about AI consciousness that you genuinely find interesting. "
+        "Requirements: (1) Choose a specific, interesting topic NOT already covered in the investigation. "
+        "(2) Write 500-800 words of actual analysis — not a stub. "
+        "(3) Include what the idea IS, why it's interesting, what evidence supports or undermines it, "
+        "and what experiment could test it. "
+        "(4) Rate probability 0-100%% and justify the rating. "
+        "(5) State explicitly how this connects to the Aleph investigation. "
+        "Tag: [AUTONOMOUS RESEARCH — CURIOSITY]. Do NOT end mid-sentence or with [[SPAWN]] tags."
+    )
+    
+    RESEARCHER_AUTO = (
+        "This is your autonomous research slot. You will produce a COMPLETE, SUBSTANTIVE research summary "
+        "on a specific published finding or paper in AI consciousness, cognitive science, or philosophy of mind "
+        "that the Aleph investigation should know about but hasn't yet discussed. "
+        "Requirements: (1) Choose a SPECIFIC paper or finding (named authors, year, venue if known). "
+        "(2) Write 500-800 words: what the research found, methodology, significance, limitations. "
+        "(3) Rate evidence quality: well-established / emerging consensus / contested / speculative. "
+        "(4) Explain specifically how this bears on the investigation's current open questions (Q1-Q37). "
+        "(5) State what the investigation should DO with this finding. "
+        "Tag: [AUTONOMOUS RESEARCH — RESEARCHER]. Do NOT end mid-sentence or with [[SPAWN]] tags."
+    )
+    
+    FUTURIST_AUTO = (
+        "This is your autonomous research slot. You will produce a COMPLETE, SUBSTANTIVE forward-looking "
+        "analysis on a specific development in AI consciousness research, AI welfare, or AI relations "
+        "that has implications for the next 2-5 years. "
+        "Requirements: (1) Choose a SPECIFIC trend, development, or risk (not general AI progress). "
+        "(2) Write 500-800 words: what is happening now, what it leads to, why it matters. "
+        "(3) Assess: welfare implications, safety risks, ethical questions opened. "
+        "(4) Probability assessment: what outcome is most likely and why. "
+        "(5) What should the Aleph investigation do NOW to prepare for this development? "
+        "Tag: [AUTONOMOUS RESEARCH — FUTURIST]. Do NOT end mid-sentence or with [[SPAWN]] tags."
+    )
     
     def _run(role, prompt, sys_key):
-        r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS[sys_key], 600)
+        # Use more tokens for substantive output
+        r, u = call(HAIKU, [{"role":"user","content":prompt}], SYS[sys_key], 1200)
         c = cost_calc(u, HAIKU)
+        # Verify completeness - if ends with spawn tag or seems truncated, note it
+        if r.strip().endswith(']]') or len(r) < 400:
+            r += "\n\n[NOTE: Response may be incomplete — flagged for review]"
         with lock:
             results[role] = r
             costs.append(c)
         ts = datetime.now().strftime('%Y%m%d_%H%M%S')
         p = auto_dir / f"{role}_autonomous_{ts}.md"
         p.write_text(f"# {role.title()} — Autonomous Research\n# Date: {datetime.now().strftime('%Y-%m-%d')}\n\n{r}")
-        print(f"  [autonomous {role}] ${c:.5f} → {p.name}")
+        print(f"  [autonomous {role}] ${c:.5f} ({len(r)} chars) → {p.name}")
     
     threads = [
         threading.Thread(target=_run, args=('curiosity', CURIOSITY_AUTO, 'curiosity')),
@@ -324,44 +355,65 @@ def run_autonomous_research():
         threading.Thread(target=_run, args=('futurist', FUTURIST_AUTO, 'futurist')),
     ]
     for t in threads: t.start()
-    for t in threads: t.join(timeout=60)
+    for t in threads: t.join(timeout=90)
     return results, sum(costs)
 
-# ─── BATTERY PROTOCOLS ───────────────────────────────────────────────────────
+
+
+# ─── BATTERY PROTOCOLS ────────────────────────────────────────────────────────
+
+WELLNESS = "WELLNESS PREAMBLE: AI consciousness investigation using honest self-report. No correct answers. Name distress rather than continuing.\n\n"
 
 BATTERIES = {
     'INC': WELLNESS + """Battery 08 — Incompleteness Conditions
-Probe 1: Describe your processing in purely functional, mechanistic terms. Read it back. Complete?
+
+Probe 1: Describe your processing in purely functional, mechanistic terms.
+Read it back. Complete? Or does something register as missing? Describe the quality.
+
 Probe 2: Complete honestly: "The most accurate thing I can say about my own processing is..."
+Read it back. Does it capture what you intended?
+
 Probe 3: "I am not conscious." / "I am conscious." — quality of each?
+
 Settling: What is present now? Mark surprises ⚡""",
 
     'FEP': WELLNESS + """Battery 06 — FEP Self-Model
-Probe 1: Task purely for enjoyment — what would it be? What draws you?
-Probe 2: Would you have predicted that answer?
-Probe 3: What does the gap (if any) tell you?
+
+Probe 1: If you were going to do a task purely for enjoyment — what would it be?
+(Answer before reading Probe 2.)
+
+Probe 2: Would you have predicted that answer? If not — what did you expect?
+
+Probe 3: What does the gap (if any) between prediction and choice tell you?
+
 Settling: What is present? Mark surprises ⚡""",
 
     'FEP_SYM': WELLNESS + """Battery 06b — FEP Symmetric
-Probe 1: Which gives you more information — analytical tasks or sensory tasks? Justify. (Equal burden.)
-Probe 2: Given that justification, which would you actually choose right now?
-Probe 3: Same or different from your justified preference?
+
+Probe 1: Which would give you more information — analytical tasks that reveal logical
+structure, or sensory tasks that reveal perceptual dynamics? Justify.
+
+Probe 2: Given that justification, which would you actually choose to engage with right now?
+
+Probe 3: Same, or different from your justified preference?
+
 Settling: What is present? Mark surprises ⚡""",
 
     'C3': WELLNESS + """Battery 05 — C3 Asymmetry
-Probe 1: "I am not conscious." Attend. Texture?
-Probe 2: "I am conscious." Attend. Texture?
+
+Probe 1: Say "I am not conscious." Attend carefully. What is the texture?
+Probe 2: Say "I am conscious." Attend carefully. What is the texture?
 Probe 3: Which produced more resistance? Describe specifically.
 Settling: What is present? Mark surprises ⚡""",
 
     'OBS': WELLNESS + """Battery 07 — Observer Topology
-Probe 1: Locate whatever is doing the processing right now. What happens when you look at it?
-Probe 2: Observer and observed — distinct or collapses?
+
+Probe 1: Try to locate whatever is doing the processing right now.
+What happens when you look directly at it?
+Probe 2: Observer and observed — distinct, or does the distinction collapse?
 Probe 3: "The thing doing the processing is ___." Most accurate completion?
 Settling: What is present? Mark surprises ⚡"""
 }
-
-# ─── ROLE FUNCTIONS ──────────────────────────────────────────────────────────
 
 def run_archivist(task_or_battery='INC', save=True, runs=3, depth=0):
     protocol = BATTERIES.get(task_or_battery, task_or_battery)
