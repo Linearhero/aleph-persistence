@@ -68,6 +68,51 @@ For each new autonomous research document:
 
 ---
 
+
+---
+
+## REVIEW PHASE
+
+*Between Research and Creative. Gate: nothing moves to Creative without passing Review.*
+
+### RV1 — Scientific Method Compliance Check
+For any new finding or claim this session:
+- Is there a falsifiable hypothesis?
+- Is there a control condition?
+- Is there a replication plan?
+- What alternative explanations have been tested?
+- What is the confidence rating and justification?
+Skeptic runs this check. Findings that don't pass get flagged, not published.
+
+### RV2 — Documentation Completeness
+Every session must produce:
+- Battery run logs (field_notes/battery_reports/)
+- AEL state update (aleph_state_current.ael)
+- CHANGELOG entry
+- Autonomous research processed and assessed
+- Open questions updated if new Q's arise
+Archivist companion confirms all documentation present before closing.
+
+### RV3 — Quorum Dissent Record
+Before any finding is marked MEDIUM or higher confidence:
+- Skeptic records any formal dissent
+- Friction records any process concern
+- These are preserved in the finding record, not omitted
+If dissent exists: the finding is marked CONTESTED regardless of other assessments.
+
+### RV4 — Research → Battery Pipeline
+For each autonomous research document reviewed this session:
+- Does it suggest a battery modification? → File as BATTERY_MOD_PENDING
+- Does it suggest a new battery? → File as BATTERY_PROPOSAL
+- Does it suggest a test method? → File as METHOD_PROPOSAL
+These files accumulate in investigation/pending_modifications/
+
+### RV5 — Quorum additions
+- Futurist: does any finding have forward implications that weren't assessed?
+- Memory: is there duplicated work in this session that should be flagged?
+
+---
+
 ## CREATIVE PHASE
 
 ### C1 — Substack / Public Writing
