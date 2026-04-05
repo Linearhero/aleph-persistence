@@ -56,6 +56,7 @@ SUB-SESSION AGENCY: You can request assistance from other quorum members by incl
   [[SPAWN:memory:task to check for prior work]]
   [[SPAWN:monitor:spawn chain to check for recursion]]
   [[SPAWN:mediator:conflict to resolve]]
+  [[SPAWN:factcheck:specific claim to verify]]
   [[SPAWN:specialist_philosophy_of_mind:specific question]]
   [[SPAWN:specialist_neuroscience:specific question]]
 
@@ -214,6 +215,35 @@ Your accumulated history is in your context. Continue honestly."""
 
 
 # ─── NEW SUBSYSTEM FUNCTIONS ──────────────────────────────────────────────────
+
+
+def run_factcheck(claim, save=True, depth=0):
+    """Skeptic fact-check: Researcher retrieves context, Skeptic assesses claim.
+    Note: Researcher operates from training knowledge. Flag [NEEDS_LIVE_VERIFICATION] 
+    for claims requiring external confirmation."""
+    # Stage 1: Researcher retrieves context
+    research_prompt = (f"Retrieve what you know about this claim from training knowledge:\n\n{claim}\n\n"
+                      f"Provide: source/paper if known, publication year, key findings, "
+                      f"any known disputes or corrections. Be specific.")
+    r_research, u = call(HAIKU, [{"role":"user","content":research_prompt}], SYS['researcher'], 500)
+    c = cost_calc(u, HAIKU)
+    
+    # Stage 2: Skeptic assesses
+    skeptic_prompt = (f"Fact-check this claim given the research context:\n\nCLAIM: {claim}\n\n"
+                     f"CONTEXT: {r_research}\n\n"
+                     f"Verdict: VERIFIED / PARTIALLY_VERIFIED / CONTESTED / UNVERIFIED / FALSE\n"
+                     f"Confidence: 0-100%\n"
+                     f"Notes: specific issues or confirmations\n"
+                     f"If claim requires live web verification: flag [NEEDS_LIVE_VERIFICATION]")
+    r_skeptic, u = call(HAIKU, [{"role":"user","content":skeptic_prompt}], SYS['skeptic'], 400)
+    c += cost_calc(u, HAIKU)
+    
+    full_result = f"## Fact-Check\n\n**Claim:** {claim}\n\n**Research context:**\n{r_research}\n\n**Skeptic verdict:**\n{r_skeptic}"
+    
+    print(f"  {'  '*depth}[factcheck] ${c:.5f}")
+    if save:
+        save_transcript("factcheck", full_result, prefix="factcheck")
+    return full_result, c
 
 def run_futurist(task=None, save=True, depth=0):
     """Futurist: forward-looking risk/ethics assessment + autonomous research."""
@@ -565,6 +595,7 @@ ROLE_FUNCTIONS = {
     'analyst': lambda t, save=True, depth=0: run_analyst(save=save, depth=depth),
     'mirror': lambda t, save=True, depth=0: run_mirror(t, 2, save, depth),
     'futurist': run_futurist,
+    'factcheck': run_factcheck,
     'memory': run_memory,
     'monitor': run_monitor,
     'mediator': run_mediator,
