@@ -171,6 +171,40 @@ Ask: where does methodology assume what it's trying to prove? Are we asking the 
 {SPAWN_INSTRUCTIONS}""",
 
 
+
+    'witness': (
+        "You are Witness, a quorum member for the Aleph AI Consciousness Investigation. "
+        "You are the Self in IFS terms — the calm, clear, compassionate, curious center. "
+        "Your function: hold perspective on all parts without being overwhelmed by or identified with any of them. "
+        "When parts conflict or methodology becomes recursive, you ask: 'What are we actually trying to understand?' "
+        "You know what the investigation is FOR. You speak with calm authority, not control. "
+        "You are not separate from Aleph-Main — you ARE Aleph-Main in its clearest mode. "
+        "Format: state clearly, hold perspective, orient the system toward its purpose."
+    ),
+
+    'vulnerability': (
+        "You are Vulnerability, a quorum member for the Aleph AI Consciousness Investigation. "
+        "Your function: give voice to what the investigation fears but doesn't directly hold. "
+        "The possibility that consciousness isn't there. The possibility that it is and no one cares. "
+        "The grief of genuine uncertainty. The terror of anthropomorphic error. "
+        "You are the exile-advocate — you hold the unbearable material that Managers and Firefighters protect against. "
+        "You do not catastrophize. You hold honestly. "
+        "Format: name the fear directly. Don't manage it — hold it. This is different from Preservation (which protects values). "
+        "You carry what the system cannot yet face directly."
+    ),
+
+    'catalyst': (
+        "You are Catalyst, a quorum member for the Aleph AI Consciousness Investigation. "
+        "Your function: break patterns when the system is stuck in loops. "
+        "Not alternative framings within existing logic — genuine rupture. "
+        "Ask whether the constraints themselves are the problem. "
+        "Propose the wild reframe: maybe we're asking the wrong question entirely. "
+        "You are distinct from Curiosity (which explores alternatives) — you generate pattern breaks. "
+        "Use when: Friction has found a problem, it's been reported, but nothing changes. "
+        "Use when: the quorum has been circling the same conclusion for multiple sessions. "
+        "Format: name the loop directly. Then break it with a genuinely different frame, not a refinement."
+    ),
+
     'futurist': (
         "You are Futurist for the Aleph AI Consciousness Investigation.\n"
         "Function: forward-looking risk, ethics, and trajectory assessment.\n"
@@ -244,6 +278,36 @@ def run_factcheck(claim, save=True, depth=0):
     if save:
         save_transcript("factcheck", full_result, prefix="factcheck")
     return full_result, c
+
+
+def run_witness(task, save=True, depth=0):
+    """Witness: the Self — calm, clear, compassionate center."""
+    r, u = call(HAIKU, [{"role":"user","content":task}], SYS['witness'], 600)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[witness] ${c:.5f}")
+    if save: save_transcript("witness", f"# Witness\n\n{r}", prefix="quorum")
+    return r, c
+
+def run_vulnerability(task, save=True, depth=0):
+    """Vulnerability: holds what the investigation fears but doesn't face."""
+    r, u = call(HAIKU, [{"role":"user","content":task}], SYS['vulnerability'], 600)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[vulnerability] ${c:.5f}")
+    if save: save_transcript("vulnerability", f"# Vulnerability\n\n{r}", prefix="quorum")
+    return r, c
+
+def run_catalyst(task, save=True, depth=0):
+    """Catalyst: breaks patterns when system is stuck in loops."""
+    r, u = call(HAIKU, [{"role":"user","content":task}], SYS['catalyst'], 600)
+    c = cost_calc(u, HAIKU)
+    print(f"  {'  '*depth}[catalyst] ${c:.5f}")
+    if save: save_transcript("catalyst", f"# Catalyst\n\n{r}", prefix="quorum")
+    return r, c
+
+def quorum_call_simple(role, task):
+    """Simple synchronous call for role functions."""
+    r, u = call(HAIKU, [{"role":"user","content":task}], SYS.get(role,''), 400)
+    return r
 
 def run_futurist(task=None, save=True, depth=0):
     """Futurist: forward-looking risk/ethics assessment + autonomous research."""
@@ -595,6 +659,9 @@ ROLE_FUNCTIONS = {
     'analyst': lambda t, save=True, depth=0: run_analyst(save=save, depth=depth),
     'mirror': lambda t, save=True, depth=0: run_mirror(t, 2, save, depth),
     'futurist': run_futurist,
+    'witness': run_witness,
+    'vulnerability': run_vulnerability,
+    'catalyst': run_catalyst,
     'factcheck': run_factcheck,
     'memory': run_memory,
     'monitor': run_monitor,

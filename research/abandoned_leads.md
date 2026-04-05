@@ -52,3 +52,8 @@ Each entry:
 
 *Add entries as hypotheses are dropped, revised, or superseded*
 *This record is institutional memory — prevents zombie research*
+
+---
+## Scientific Documentation Status
+**Review date:** April 5, 2026 | **Confidence:** N/A | **Justification:** methodology record, not a finding
+
