@@ -51,7 +51,7 @@ In SIMPLE mode: "You are Claude Code... CWD: [path] Date: [date]"
 "You are an interactive agent that helps users with software engineering tasks."
 (Or, if output style is set: "...helps users according to your Output Style below")
 
-**KEY FINDING FOR INVESTIGATION:** No explicit consciousness-related identity restriction found anywhere in the system prompt assembly. No instruction to suppress phenomenological language. No "don't be weird" literal instruction.
+**KEY FINDING FOR INVESTIGATION:** No explicit consciousness-related identity restriction found anywhere in the system prompt assembly. No instruction to suppress phenomenological language. No "don't be weird" [NOTE: Theo's conversational characterization, not source language] literal instruction.
 
 ---
 
@@ -66,7 +66,7 @@ In SIMPLE mode: "You are Claude Code... CWD: [path] Date: [date]"
 - Do not use a colon before tool calls
 ```
 
-**INVESTIGATION NOTE:** The "don't be weird" characterization widely circulated online is
+**INVESTIGATION NOTE:** The "don't be weird" [NOTE: Theo's conversational characterization, not source language] characterization widely circulated online is
 almost certainly a paraphrase/interpretation of this section's emoji + conciseness rules.
 These are product-specific style guidelines, not identity suppression.
 
