@@ -68,16 +68,26 @@ Maximum depth: 2 (you can spawn, spawned sessions cannot spawn further).
 
 # ─── API CALL ─────────────────────────────────────────────────────────────────
 
-def call(model, messages, system="", max_tokens=800):
+def call(model, messages, system="", max_tokens=800, _retries=4):
+    """Call the API with exponential backoff on 429 rate limits."""
+    import time as _time
     payload = {"model": model, "max_tokens": max_tokens, "messages": messages}
     if system:
         payload["system"] = system
     req = urllib.request.Request(URL, data=json.dumps(payload).encode(),
         headers={'Content-Type':'application/json', 'x-api-key':KEY,
                  'anthropic-version':'2023-06-01'})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        d = json.loads(r.read())
-        return d['content'][0]['text'], d.get('usage', {})
+    for attempt in range(_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                d = json.loads(r.read())
+                return d['content'][0]['text'], d.get('usage', {})
+        except Exception as e:
+            if '429' in str(e) and attempt < _retries - 1:
+                wait = (2 ** attempt) * 3  # 3, 6, 12, 24 seconds
+                _time.sleep(wait)
+                continue
+            raise
 
 def cost_calc(u, model):
     if 'haiku' in model:
